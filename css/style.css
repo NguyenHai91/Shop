@@ -177,11 +177,14 @@ a {
     padding-top: 20px; }
     .wrapper #content #brands .cover-brands .brand-box {
       width: 33.33%;
+      height: 60px;
       float: left;
-      padding: 5px; }
+      padding: 5px 50px; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%;
         height: 100%; }
+      .wrapper #content #brands .cover-brands .brand-box:hover {
+        border: 1px solid black; }
   .wrapper #content #best-sellers .products {
     margin-top: 30px;
     position: relative;
@@ -223,7 +226,8 @@ a {
         width: 5000px;
         list-style: none; }
         .wrapper #content #hot-products .cover-box ul li {
-          float: left; }
+          float: left;
+          margin-right: 10px; }
           .wrapper #content #hot-products .cover-box ul li .product {
             width: 170px;
             float: left; }
@@ -383,7 +387,7 @@ a {
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
               text-decoration: none;
-              font-size: 20px; }
+              font-size: 16px; }
           .wrapper #footer .menu-box .box-left .box:after {
             content: "";
             clear: both;
@@ -399,8 +403,7 @@ a {
           .wrapper #footer .menu-box .box-right .contact .send-mail input {
             height: 30px;
             min-width: 70%;
-            border: 1px solid black;
-            outline: none; }
+            border: 1px solid black; }
           .wrapper #footer .menu-box .box-right .contact .send-mail .send {
             width: 70px;
             height: 30px;
@@ -421,11 +424,14 @@ a {
                 height: 40px;
                 border: 1px solid black;
                 padding: 10px;
-                font-size: 20px; }
-              .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
-                color: white;
-                background-color: #3a5b93;
-                border: none; }
+                font-size: 20px;
+                border-radius: 20px; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook {
+                padding: 12px; }
+                .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
+                  color: white;
+                  background-color: #3a5b93;
+                  border: none; }
               .wrapper #footer .menu-box .box-right .social-link ul li a i.twitter:hover {
                 color: white;
                 background-color: #00a3ec;
@@ -503,7 +509,8 @@ a {
     background-color: white; }
 
   .wrapper #navbar {
-    height: 50px; }
+    height: 50px;
+    border-bottom: 1px solid black; }
     .wrapper #navbar .btn-bag {
       width: 40px;
       height: 40px;
@@ -531,6 +538,8 @@ a {
       margin-top: 5px; }
       .wrapper #navbar .btn-menu i {
         font-size: 28px; }
+    .wrapper #navbar .mobile-menu {
+      display: none; }
   .wrapper #content #head-slide .slide-box {
     position: relative; }
     .wrapper #content #head-slide .slide-box img {
@@ -561,12 +570,15 @@ a {
     border-top: 1px solid black;
     padding-top: 20px; }
     .wrapper #content #brands .cover-brands .brand-box {
-      width: 33.33%;
+      width: 25%;
+      height: 50px;
       float: left;
-      padding: 5px; }
+      padding: 5px 50px; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%;
         height: 100%; }
+      .wrapper #content #brands .cover-brands .brand-box:hover {
+        border: 1px solid black; }
   .wrapper #content #best-sellers .products {
     margin-top: 30px;
     position: relative;
@@ -769,7 +781,7 @@ a {
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
               text-decoration: none;
-              font-size: 20px; }
+              font-size: 16px; }
       .wrapper #footer .menu-box .box-right {
         width: 100%; }
         .wrapper #footer .menu-box .box-right .contact {
@@ -781,8 +793,7 @@ a {
           .wrapper #footer .menu-box .box-right .contact .send-mail input {
             height: 30px;
             min-width: 70%;
-            border: 1px solid black;
-            outline: none; }
+            border: 1px solid black; }
           .wrapper #footer .menu-box .box-right .contact .send-mail .send {
             width: 70px;
             height: 30px;
@@ -803,11 +814,14 @@ a {
                 height: 40px;
                 border: 1px solid black;
                 padding: 10px;
-                font-size: 20px; }
-              .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
-                color: white;
-                background-color: #3a5b93;
-                border: none; }
+                font-size: 20px;
+                border-radius: 20px; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook {
+                padding: 12px; }
+                .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
+                  color: white;
+                  background-color: #3a5b93;
+                  border: none; }
               .wrapper #footer .menu-box .box-right .social-link ul li a i.twitter:hover {
                 color: white;
                 background-color: #00a3ec;
@@ -909,7 +923,7 @@ a {
           float: left;
           margin-left: 20px; }
           .wrapper #header #navbar .navbar-full .menu ul li a {
-            font-size: 25px;
+            font-size: 23px;
             text-decoration: none;
             color: black; }
           .wrapper #header #navbar .navbar-full .menu ul li a.active {
@@ -992,12 +1006,15 @@ a {
     border-top: 1px solid black;
     padding-top: 20px; }
     .wrapper #content #brands .cover-brands .brand-box {
-      width: 25%;
+      width: 16.666%;
+      height: 100px;
       float: left;
-      padding: 5px; }
+      padding: 5px 50px; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%;
         height: 100%; }
+      .wrapper #content #brands .cover-brands .brand-box:hover {
+        border: 1px solid black; }
   .wrapper #content #best-sellers .container-full .col-lg-2 {
     height: 100%; }
   .wrapper #content #best-sellers .container-full .menu-vertical {
@@ -1216,7 +1233,8 @@ a {
             margin-left: 10px; }
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
-              text-decoration: none; }
+              text-decoration: none;
+              font-size: 16px; }
       .wrapper #footer .menu-box .box-right {
         width: 35%;
         float: right; }
@@ -1225,8 +1243,7 @@ a {
         .wrapper #footer .menu-box .box-right .contact .send-mail input {
           height: 30px;
           min-width: 70%;
-          border: 1px solid black;
-          outline: none; }
+          border: 1px solid black; }
         .wrapper #footer .menu-box .box-right .contact .send-mail .send {
           width: 70px;
           height: 30px;
@@ -1248,11 +1265,14 @@ a {
                 border: 1px solid black;
                 padding: 10px;
                 font-size: 20px;
-                box-shadow: none; }
-              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook:hover {
-                color: white;
-                background-color: #3a5b93;
-                border: none; }
+                box-shadow: none;
+                border-radius: 20px; }
+              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook {
+                padding: 12px; }
+                .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook:hover {
+                  color: white;
+                  background-color: #3a5b93;
+                  border: none; }
               .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.twitter:hover {
                 color: white;
                 background-color: #00a3ec;
@@ -1348,7 +1368,7 @@ a {
           float: left;
           margin-left: 20px; }
           .wrapper #header #navbar .navbar-full .menu ul li a {
-            font-size: 25px;
+            font-size: 23px;
             text-decoration: none;
             color: black; }
           .wrapper #header #navbar .navbar-full .menu ul li .active {
@@ -1733,7 +1753,8 @@ a {
             margin-left: 10px; }
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
-              text-decoration: none; }
+              text-decoration: none;
+              font-size: 16px; }
       .wrapper #footer .menu-box .box-right {
         width: 35%;
         float: right; }
@@ -1742,8 +1763,7 @@ a {
         .wrapper #footer .menu-box .box-right .contact .send-mail input {
           height: 30px;
           min-width: 70%;
-          border: 1px solid black;
-          outline: none; }
+          border: 1px solid black; }
         .wrapper #footer .menu-box .box-right .contact .send-mail .send {
           width: 70px;
           height: 30px;
@@ -1764,11 +1784,14 @@ a {
                 height: 40px;
                 border: 1px solid black;
                 padding: 10px;
-                font-size: 20px; }
-              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook:hover {
-                color: white;
-                background-color: #3a5b93;
-                border: none; }
+                font-size: 20px;
+                border-radius: 20px; }
+              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook {
+                padding: 12px; }
+                .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook:hover {
+                  color: white;
+                  background-color: #3a5b93;
+                  border: none; }
               .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.twitter:hover {
                 color: white;
                 background-color: #00a3ec;
