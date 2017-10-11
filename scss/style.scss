@@ -449,6 +449,193 @@ a{
 					
 				}
 			}
+			#cart {
+				padding: 0 10px;
+				.title-cart {
+					height: 70px;
+					font-size: 30px;
+					padding: 20px 0;
+					border-bottom: 2px solid black;
+				}
+				.box-content {
+					.row {
+						height: 80px;
+					}
+					.details-product,
+					.quantity,
+					.price,
+					.total,
+					.delete,
+					.quantity {
+						height: 100%;
+						//padding-top: 20px;
+					}
+					.title-table {
+						height: 50px;
+						border-bottom: 1px solid black;
+					}
+					ul.list-products {
+						list-style: none;
+						li{
+							.product-order {
+								//border-bottom: 1px dotted black;
+								.title-row {
+									width: 40%;
+									float: left;
+								}
+								.value-box {
+									width: 60%;
+									float: right;
+								}
+								.thumbnail {
+									width: 60px;
+									height: 80px;
+									padding: 5px;
+									img {
+										height: 100%;
+										width: 100%;
+									}
+								}
+								.details-product {
+									a {
+										font-size: 14px;
+									}
+								}
+								
+								.btn-sub {
+									width: 30px;
+									height: 30px;
+									margin: 0;
+									border: 1px solid black;
+									cursor: pointer;
+								}
+								.btn-plus {
+									width: 30px;
+									height: 30px;
+									margin: 0;
+									border: 1px solid black;
+									cursor: pointer;
+								}
+								input {
+									width: 30px;
+									height: 30px;
+									margin: -2px;
+									text-align: right;
+									border:  1px solid black;
+								}
+								.delete {
+									a{
+										font-size: 14px;
+									}
+								}
+							}
+						}
+						
+					}
+					.box-total {
+						.total-cost {
+							height: 100px;
+							font-size: 20px;
+							color: #f70;
+							float: right;
+							padding: 20px 0;
+						}
+					}
+					.box-checkout {
+						.btn-checkout {
+							height: 40px;
+							padding: 0 20px;
+							font-size: 20px;
+							background-color: #f70;
+							border: none;
+							float: right;
+							margin-left: 50px;
+							color: #fff;
+							cursor: pointer;
+						}
+						.btn-continues {
+							height: 40px;
+							padding: 0 20px;
+							font-size: 20px;
+							background-color: #0bf;
+							border: none;
+							float: right;
+							color: #fff;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+			#checkout {
+				padding: 0 10px;
+				.title-checkout {
+					height: 70px;
+					font-size: 30px;
+					padding: 20px 0;
+					border-bottom: 2px solid black;
+				}
+				.box-content {
+					min-height: 300px;
+					.title-box-info,
+					.title-box-payments,
+					.title-box-summary {
+						border-bottom: 1px solid black;
+						height: 40px;
+						padding: 15px 0;
+						font-size: 20px;
+						background-color: #ffffff;
+					}
+
+					#form-info-client {
+						input[name="name"],
+						input[name="phone"],
+						input[name="email"],
+						textarea[name="address"] {
+							display: block;
+							width: 100%;
+							height: 30px;
+							border: 1px solid black;
+							margin: 10px 0;
+
+						}
+						textarea[name="address"] {
+							height: 80px;
+						}
+					}
+					.payments {
+						.visa,
+						.atm,
+						.received {
+							margin: 10px 0;
+						}
+					}
+					.summary-order {
+						background-color: #DBDBDB;
+						ul{
+							list-style: none;
+							padding: 10px 0;
+							li{
+								margin: 10px;
+								border-bottom: 1px dotted black;
+								.total-cost {
+									font-size: 20px;
+								}
+								.submit {
+									height: 40px;
+									width: 100%;
+									color: #fff;
+									border: none;
+									background-color: #f70;
+								}
+								&:last-child {
+									border: none;
+								}
+							}
+						}
+					}
+					
+				}
+			}
 		}
 		#footer {
 			border-top: 2px solid black;
@@ -1060,15 +1247,24 @@ a{
 			}
 			#checkout {
 				padding: 0 30px;
-				.title-cart {
+				.title-checkout {
 					height: 70px;
 					font-size: 30px;
 					padding: 20px 0;
 					border-bottom: 2px solid black;
 				}
 				.box-content {
-					
-					
+					min-height: 300px;
+					.title-box-info,
+					.title-box-payments,
+					.title-box-summary {
+						border-bottom: 1px solid black;
+						height: 40px;
+						padding: 15px 0;
+						font-size: 20px;
+						background-color: #ffffff;
+					}
+
 					#form-info-client {
 						input[name="name"],
 						input[name="phone"],
@@ -1091,15 +1287,15 @@ a{
 						.received {
 							margin: 10px;
 						}
-						border-left: 1px solid black;
-						border-right: 1px solid black; 
 					}
 					.summary-order {
-						background-color: #ccc;
+						background-color: #DBDBDB;
 						ul{
 							list-style: none;
+							padding: 20px;
 							li{
 								margin: 10px;
+								border-bottom: 1px dotted black;
 								.total-cost {
 									font-size: 20px;
 								}
@@ -1109,6 +1305,9 @@ a{
 									color: #fff;
 									border: none;
 									background-color: #f70;
+								}
+								&:last-child {
+									border: none;
 								}
 							}
 						}
@@ -1830,20 +2029,27 @@ a{
 					}
 				}
 			}
+			
 			#checkout {
 				padding: 0 30px;
-				.title-cart {
+				.title-checkout {
 					height: 70px;
 					font-size: 30px;
 					padding: 20px 0;
 					border-bottom: 2px solid black;
 				}
 				.box-content {
-					
-					.title-table {
-						height: 50px;
+					min-height: 300px;
+					.title-box-info,
+					.title-box-payments,
+					.title-box-summary {
 						border-bottom: 1px solid black;
+						height: 40px;
+						padding: 15px 0;
+						font-size: 20px;
+						background-color: #ffffff;
 					}
+
 					#form-info-client {
 						input[name="name"],
 						input[name="phone"],
@@ -1867,12 +2073,14 @@ a{
 							margin: 10px;
 						}
 					}
-					.summarys-order {
-						background-color: #ccc;
+					.summary-order {
+						background-color: #DBDBDB;
 						ul{
 							list-style: none;
+							padding: 20px;
 							li{
 								margin: 10px;
+								border-bottom: 1px dotted black;
 								.total-cost {
 									font-size: 20px;
 								}
@@ -1882,6 +2090,9 @@ a{
 									color: #fff;
 									border: none;
 									background-color: #f70;
+								}
+								&:last-child {
+									border: none;
 								}
 							}
 						}
@@ -2698,18 +2909,24 @@ a{
 			}
 			#checkout {
 				padding: 0 30px;
-				.title-cart {
+				.title-checkout {
 					height: 70px;
 					font-size: 30px;
 					padding: 20px 0;
 					border-bottom: 2px solid black;
 				}
 				.box-content {
-					
-					.title-table {
-						height: 50px;
+					min-height: 300px;
+					.title-box-info,
+					.title-box-payments,
+					.title-box-summary {
 						border-bottom: 1px solid black;
+						height: 40px;
+						padding: 15px 0;
+						font-size: 20px;
+						background-color: #ffffff;
 					}
+
 					#form-info-client {
 						input[name="name"],
 						input[name="phone"],
@@ -2733,12 +2950,14 @@ a{
 							margin: 10px;
 						}
 					}
-					.summarys-order {
-						background-color: #ccc;
+					.summary-order {
+						background-color: #DBDBDB;
 						ul{
 							list-style: none;
+							padding: 20px;
 							li{
 								margin: 10px;
+								border-bottom: 1px dotted black;
 								.total-cost {
 									font-size: 20px;
 								}
@@ -2748,6 +2967,9 @@ a{
 									color: #fff;
 									border: none;
 									background-color: #f70;
+								}
+								&:last-child {
+									border: none;
 								}
 							}
 						}
