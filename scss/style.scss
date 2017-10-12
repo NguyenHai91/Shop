@@ -35,7 +35,7 @@ a{
 .row:first-child {
 	margin-top: 0;
 }
-@media (max-width: 479px) 
+@media (max-width: 479px)
 {
 	.hidden-mobile{
 		display: none;
@@ -123,22 +123,23 @@ a{
 				top: 51px;
 				left: 0;
 				width: 100%;
-
-				background-color: #AFAFAF;
+				color: #fff;
+				background-color: #272822;
 				display: none;
 				z-index: 200;
 				ul {
 					list-style: none;
 					li {
 						height: 40px;
-						border-bottom: 1px solid black;
+						border-bottom: 1px solid #fff;
 						text-align: center;
-						padding-top: 5px;
+						padding-top: 12px;
 						.title-menu {
 							font-size: 20px;
-							padding-top: 5px;
+							padding-top: 0;
 						}
 						a{
+							color: #fff;
 							text-decoration: none;
 							font-size: 20px;
 							
@@ -149,7 +150,8 @@ a{
 								min-width: 100%;
 								height: 30px;
 								float: left;
-								margin-top: 0px;
+								margin-top: -5px;
+								font-size: 16px;
 							}
 							
 						}
@@ -163,6 +165,7 @@ a{
 				position: relative;
 				.slide-box {
 					ul{
+						list-style: none;
 						width: 2000px;
 						li{
 							width: 479px;
@@ -871,7 +874,47 @@ a{
 				}
 			}
 			.mobile-menu {
+				position: absolute;
+				top: 50px;
+				left: 0;
+				width: 100%;
+
+				background-color: #272822;
 				display: none;
+				z-index: 200;
+				ul {
+					list-style: none;
+					li {
+						height: 40px;
+						border-bottom: 1px solid #fff;
+						text-align: center;
+						padding-top: 10px;
+						color: #fff;
+						.title-menu {
+							font-size: 20px;
+							padding-top: 0;
+							color: #fff;
+						}
+						a{
+							color: #fff;
+							text-decoration: none;
+							font-size: 20px;
+							
+						}
+						.box-search {
+
+							input {
+								min-width: 100%;
+								height: 30px;
+								float: left;
+								font-size: 16px;
+								margin-top: -5px;
+							}
+							
+						}
+						
+					}
+				}
 			}
 		}
 		#content {
@@ -929,9 +972,9 @@ a{
 				.cover-brands{
 					.brand-box {
 						width: 25%;
-						height: 70px;
+						height: 80px;
 						float: left;
-						padding: 0px 50px;
+						padding: 0px 70px;
 						.cover-img{
 							img{
 								width: 100%;
@@ -1397,20 +1440,21 @@ a{
 				}
 				.box-right {
 					width: 100%;
-
+					padding-left: 5px;
 					.contact {
 						width: 100%;
 						h4{
 							font-size: 20px;
 						}
 						.status {
-							margin: 5px 0;
+							margin: 5px 5px;
 						}
 						.send-mail {
 							input {
 								height: 30px;
 								min-width: 70%;
 								border: 1px solid black;
+								margin: 0 5px;
 							}
 							.send {
 								width: 70px;
@@ -1570,7 +1614,7 @@ a{
 							li {
 								float: left;
 								margin-left: 20px;
-								
+								height: 35px;
 								a{
 									font-size: 23px;
 									text-decoration: none;
@@ -1586,15 +1630,31 @@ a{
 									top: 60px;
 									width: 100%;
 									height: 200px;
-									
 									overflow: hidden;
 									border-bottom: 1px solid black;
 									background-color: white;
+									padding-top: 10px;
 									z-index: 101;
 									display: none;
 									ul{
 										width: 70%;
 										float: left;
+										li{
+											width: 30%;
+											float: left;
+											font-size: 20px;
+											ul{
+												width: 90%;
+												margin-left: -10px;
+												li{
+													width: 100%;
+													display: block;
+													a{
+														font-size: 16px;
+													}
+												}
+											}
+										}
 									}
 									.box-img {
 										width: 30%;
@@ -1649,32 +1709,22 @@ a{
 
 						.bag {
 							font-size: 40px;
-							//margin-left: 30px;
+							
 						}
 					}
 				}
 			}
 		}
 		#content {
+			
+
 			#head-slide {
 				position: relative;
+				overflow-x: hidden;
 				.slide-box {
 					
-					ul {
-						width: 5000px;
-						white-space: nowrap;
-						li{
-							width: 1280px;
-							max-height: 600px;
-							overflow: hidden;
-							float: left;
-							img{
-								width: 100%;
-								z-index: 100;
-							}
-						}
-					}
-					
+					margin-top: -1px;
+					width: 100%;
 					.btn-shop{
 						position: absolute;
 						bottom: 20%;
@@ -1701,6 +1751,21 @@ a{
 						height: 70px;
 
 					}
+					ul {
+						width: 5000px;
+						white-space: nowrap;
+						li{
+							width: 980px;
+							max-height: 600px;
+							overflow: hidden;
+							float: left;
+							img{
+								width: 100%;
+								z-index: 100;
+							}
+						}
+					}
+
 				}
 			}
 			#brands{
@@ -2478,8 +2543,9 @@ a{
 		#content {
 			#head-slide {
 				position: relative;
+
 				.slide-box {
-					
+					overflow: hidden;
 					margin-top: -1px;
 					width: 100%;
 					.btn-shop{

@@ -1,7 +1,8 @@
 
 window.addEventListener("DOMContentLoaded", function (event) 
 {
-
+	let body = document.getElementsByTagName("body")[0];
+	console.log(body.clientWidth);
 	let loginBox = document.getElementById("login-register");
 	// show login and register box
 	let account = document.getElementById("account");
@@ -52,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function (event)
 		handleIndexHead(n);
 
 		listImagesHead.style.transition = 'transform 1s ease';
-		listImagesHead.style.transform = 'translateX(' + indImageHead * -1280 + 'px)';
+		listImagesHead.style.transform = 'translateX(' + indImageHead * (-body.clientWidth) + 'px)';
 	}
 	function controlSlideHead()
 	{
