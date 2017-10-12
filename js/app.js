@@ -19,6 +19,19 @@ window.addEventListener("DOMContentLoaded", function (event)
 	{
 		loginBox.style.display = 'none';
 	});
+	// toggle mobile menu
+	let btnMenu = document.getElementById("btn-menu");
+	let mobileMenu = document.getElementById("mobile-menu");
+	btnMenu.addEventListener("click", function(event)
+	{
+		let isShow = mobileMenu.style.display;
+		if (isShow == "none") {
+			mobileMenu.style.display = "block";
+		} else{
+			mobileMenu.style.display = "none";
+		};
+		
+	});
 	// slide images head
 	//let slideHead = document.getElementById("head-slide");
 	let listImagesHead = document.getElementById("list-images-head");
@@ -49,7 +62,10 @@ window.addEventListener("DOMContentLoaded", function (event)
 	controlSlideHead();
 	// slid hot products
 	let listImagesHot = document.getElementById("list-hot-products");
+	let prev = document.getElementById("btn-prev");
+	let next = document.getElementById("btn-next");
 	let indImageHot = -1;
+
 	function handleIndexHot (n)
 	{
 		indImageHot = indImageHot + n;
@@ -61,6 +77,15 @@ window.addEventListener("DOMContentLoaded", function (event)
 			}
 		};
 	}
+	function plusImageHot(n)
+	{
+		handleIndexHot(n);
+		listImagesHot.style.transition = 'transform 0.1s ease';
+		listImagesHot.style.transform = 'translateX(' + indImageHot * -270 + 'px)';
+		
+
+	}
+
 	function slideHotProducts(n)
 	{
 		handleIndexHot(n);
@@ -68,10 +93,20 @@ window.addEventListener("DOMContentLoaded", function (event)
 		listImagesHot.style.transition = 'transform 1s ease';
 		listImagesHot.style.transform = 'translateX(' + indImageHot * -270 + 'px)';
 	}
+	
 	function controlSlideHot()
 	{
 		slideHotProducts(1);
 		setTimeout(controlSlideHot, 3000);
+
 	}
 	controlSlideHot();
+	prev.addEventListener("click", function()
+	{
+		plusImageHot(-1);
+	});
+	next.addEventListener("click", function()
+	{
+		plusImageHot(1);
+	});
 });

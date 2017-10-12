@@ -125,18 +125,22 @@ a {
         font-size: 28px; }
     .wrapper #navbar .mobile-menu {
       position: absolute;
-      top: 41px;
+      top: 51px;
       left: 0;
       width: 100%;
-      background-color: white;
+      background-color: #AFAFAF;
       display: none;
-      z-index: 105; }
+      z-index: 200; }
       .wrapper #navbar .mobile-menu ul {
         list-style: none; }
         .wrapper #navbar .mobile-menu ul li {
-          height: 35px;
+          height: 40px;
           border-bottom: 1px solid black;
-          text-align: center; }
+          text-align: center;
+          padding-top: 5px; }
+          .wrapper #navbar .mobile-menu ul li .title-menu {
+            font-size: 20px;
+            padding-top: 5px; }
           .wrapper #navbar .mobile-menu ul li a {
             text-decoration: none;
             font-size: 20px; }
@@ -145,11 +149,16 @@ a {
             height: 30px;
             float: left;
             margin-top: 0px; }
-  .wrapper #content #head-slide .slide-box {
+  .wrapper #content #head-slide {
     position: relative; }
-    .wrapper #content #head-slide .slide-box img {
-      width: 100%;
-      z-index: 100; }
+    .wrapper #content #head-slide .slide-box ul {
+      width: 2000px; }
+      .wrapper #content #head-slide .slide-box ul li {
+        width: 479px;
+        float: left; }
+        .wrapper #content #head-slide .slide-box ul li img {
+          width: 100%;
+          z-index: 100; }
     .wrapper #content #head-slide .slide-box .btn-shop {
       width: 200px;
       height: 50px;
@@ -161,7 +170,7 @@ a {
       background-color: rgba(0, 0, 0, 0.2);
       font-size: 20px;
       color: rgba(255, 255, 255, 0.5);
-      z-index: 101; }
+      z-index: 105; }
       .wrapper #content #head-slide .slide-box .btn-shop:hover {
         border: 1px solid white;
         background-color: black;
@@ -179,7 +188,7 @@ a {
       width: 33.33%;
       height: 60px;
       float: left;
-      padding: 5px 50px; }
+      padding: 5px 30px; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%;
         height: 100%; }
@@ -213,11 +222,15 @@ a {
     padding-top: 20px; }
     .wrapper #content #hot-products .cover-box {
       width: 100%;
-      overflow-x: auto; }
+      overflow-x: hidden; }
       .wrapper #content #hot-products .cover-box .size-btn {
         position: absolute;
         font-size: 100px;
-        top: 40%; }
+        top: 30%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 105; }
       .wrapper #content #hot-products .cover-box .btn-left {
         left: 0; }
       .wrapper #content #hot-products .cover-box .btn-right {
@@ -234,7 +247,8 @@ a {
             .wrapper #content #hot-products .cover-box ul li .product .cover-img {
               height: 80%; }
               .wrapper #content #hot-products .cover-box ul li .product .cover-img img {
-                width: 100%; }
+                width: 100%;
+                z-index: 100; }
             .wrapper #content #hot-products .cover-box ul li .product .name {
               font-size: 20px;
               margin: 5px 10px;
@@ -518,7 +532,7 @@ a {
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
               text-decoration: none;
-              font-size: 16px; }
+              font-size: 13px; }
           .wrapper #footer .menu-box .box-left .box:after {
             content: "";
             clear: both;
@@ -558,7 +572,7 @@ a {
                 font-size: 20px;
                 border-radius: 20px; }
               .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook {
-                padding: 12px; }
+                padding: 13px; }
                 .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
                   color: white;
                   background-color: #3a5b93;
@@ -566,6 +580,14 @@ a {
               .wrapper #footer .menu-box .box-right .social-link ul li a i.twitter:hover {
                 color: white;
                 background-color: #00a3ec;
+                border: none; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.google:hover {
+                color: #f99;
+                background-color: #00a3ec;
+                border: none; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.pinterest:hover {
+                color: white;
+                background-color: #f97;
                 border: none; }
     .wrapper #footer .copyright {
       height: 40px;
@@ -671,30 +693,42 @@ a {
         font-size: 28px; }
     .wrapper #navbar .mobile-menu {
       display: none; }
-  .wrapper #content #head-slide .slide-box {
+  .wrapper #content #head-slide {
     position: relative; }
-    .wrapper #content #head-slide .slide-box img {
-      width: 100%; }
-    .wrapper #content #head-slide .slide-box .btn-shop {
-      width: 200px;
-      height: 50px;
-      position: absolute;
-      left: 50%;
-      margin-left: -100px;
-      bottom: 20%;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      background-color: rgba(0, 0, 0, 0.2);
-      font-size: 20px;
-      color: rgba(255, 255, 255, 0.5);
-      z-index: 101; }
-      .wrapper #content #head-slide .slide-box .btn-shop:hover {
-        border: 1px solid white;
-        background-color: black;
-        color: white; }
-    .wrapper #content #head-slide .slide-box .btn-men {
-      bottom: 90px; }
-    .wrapper #content #head-slide .slide-box .btn-women {
-      bottom: 30px; }
+    .wrapper #content #head-slide .slide-box {
+      overflow-x: hidden; }
+      .wrapper #content #head-slide .slide-box ul {
+        width: 5000px;
+        white-space: nowrap;
+        list-style: none; }
+        .wrapper #content #head-slide .slide-box ul li {
+          width: 960px;
+          max-height: 500px;
+          overflow: hidden;
+          float: left; }
+          .wrapper #content #head-slide .slide-box ul li img {
+            width: 100%;
+            z-index: 100; }
+      .wrapper #content #head-slide .slide-box .btn-shop {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+        bottom: 20%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+        color: rgba(255, 255, 255, 0.5);
+        z-index: 105; }
+        .wrapper #content #head-slide .slide-box .btn-shop:hover {
+          border: 1px solid white;
+          background-color: black;
+          color: white; }
+      .wrapper #content #head-slide .slide-box .btn-men {
+        bottom: 90px; }
+      .wrapper #content #head-slide .slide-box .btn-women {
+        bottom: 30px; }
   .wrapper #content #brands {
     margin-top: 30px;
     position: relative;
@@ -702,9 +736,9 @@ a {
     padding-top: 20px; }
     .wrapper #content #brands .cover-brands .brand-box {
       width: 25%;
-      height: 50px;
+      height: 70px;
       float: left;
-      padding: 5px 50px; }
+      padding: 0px 50px; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%;
         height: 100%; }
@@ -738,17 +772,21 @@ a {
     padding-top: 20px; }
     .wrapper #content #hot-products .cover-box {
       width: 100%;
-      overflow-x: auto; }
+      overflow-x: hidden; }
       .wrapper #content #hot-products .cover-box .size-btn {
         position: absolute;
         font-size: 100px;
-        top: 40%; }
+        top: 40%;
+        background: transparent;
+        border: none;
+        z-index: 105; }
       .wrapper #content #hot-products .cover-box .btn-left {
         left: 0; }
       .wrapper #content #hot-products .cover-box .btn-right {
         right: 0; }
       .wrapper #content #hot-products .cover-box ul {
         width: 5000px;
+        overflow-x: hidden;
         list-style: none; }
         .wrapper #content #hot-products .cover-box ul li {
           float: left;
@@ -759,7 +797,8 @@ a {
             .wrapper #content #hot-products .cover-box ul li .product .cover-img {
               height: 80%; }
               .wrapper #content #hot-products .cover-box ul li .product .cover-img img {
-                width: 100%; }
+                width: 100%;
+                z-index: 100; }
             .wrapper #content #hot-products .cover-box ul li .product .name {
               font-size: 20px;
               margin: 5px 10px;
@@ -1037,7 +1076,7 @@ a {
             .wrapper #footer .menu-box .box-left .box ul li a {
               color: black;
               text-decoration: none;
-              font-size: 16px; }
+              font-size: 13px; }
       .wrapper #footer .menu-box .box-right {
         width: 100%; }
         .wrapper #footer .menu-box .box-right .contact {
@@ -1073,7 +1112,7 @@ a {
                 font-size: 20px;
                 border-radius: 20px; }
               .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook {
-                padding: 12px; }
+                padding: 13px; }
                 .wrapper #footer .menu-box .box-right .social-link ul li a i.facebook:hover {
                   color: white;
                   background-color: #3a5b93;
@@ -1082,13 +1121,21 @@ a {
                 color: white;
                 background-color: #00a3ec;
                 border: none; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.google:hover {
+                color: #f99;
+                background-color: #00a3ec;
+                border: none; }
+              .wrapper #footer .menu-box .box-right .social-link ul li a i.pinterest:hover {
+                color: white;
+                background-color: #f97;
+                border: none; }
     .wrapper #footer .copyright {
       height: 40px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
       .wrapper #footer .copyright span {
-        font-size: 20px;
+        font-size: 16px;
         color: white; } }
 @media (min-width: 960px) and (max-width: 1199px) {
   .hidden-desktop {
@@ -1136,7 +1183,7 @@ a {
   .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 30px; }
+    padding: 0 20px; }
 
   .container-full {
     width: 100%; }
@@ -1221,21 +1268,30 @@ a {
         border-bottom: 1px solid black; }
     .wrapper #header #navbar .navbar-full .account-box {
       margin-top: 8px; }
-      .wrapper #header #navbar .navbar-full .account-box a.account {
+      .wrapper #header #navbar .navbar-full .account-box .account {
         float: right;
         margin-top: 18px;
         padding: 0 3px;
         font-size: 20px;
         text-decoration: none;
         border: 1px solid black;
-        border-radius: 3px; }
+        border-radius: 3px;
+        background-color: #fff; }
       .wrapper #header #navbar .navbar-full .account-box .bag {
         font-size: 40px; }
-  .wrapper #content #head-slide .slide-box {
+  .wrapper #content #head-slide {
     position: relative; }
-    .wrapper #content #head-slide .slide-box img {
-      width: 100%;
-      z-index: 100; }
+    .wrapper #content #head-slide .slide-box ul {
+      width: 5000px;
+      white-space: nowrap; }
+      .wrapper #content #head-slide .slide-box ul li {
+        width: 1280px;
+        max-height: 600px;
+        overflow: hidden;
+        float: left; }
+        .wrapper #content #head-slide .slide-box ul li img {
+          width: 100%;
+          z-index: 100; }
     .wrapper #content #head-slide .slide-box .btn-shop {
       position: absolute;
       bottom: 20%;
@@ -1271,67 +1327,74 @@ a {
         height: 100%; }
       .wrapper #content #brands .cover-brands .brand-box:hover {
         border: 1px solid black; }
-  .wrapper #content #best-sellers .container-full .col-lg-2 {
-    height: 100%; }
-  .wrapper #content #best-sellers .container-full .menu-vertical {
-    margin-top: 30px;
-    position: relative;
-    border: 1px solid black;
-    height: 100%;
-    padding: 30px; }
-    .wrapper #content #best-sellers .container-full .menu-vertical h4 {
-      font-size: 20px; }
-    .wrapper #content #best-sellers .container-full .menu-vertical ul {
-      margin-left: 20px;
-      list-style: none; }
-      .wrapper #content #best-sellers .container-full .menu-vertical ul li a {
-        font-size: 18px;
-        text-decoration: none; }
-  .wrapper #content #best-sellers .container-full .features .title-box {
-    border-bottom: 1px solid black; }
-    .wrapper #content #best-sellers .container-full .features .title-box .title {
-      font-size: 20px;
-      text-align: center; }
-  .wrapper #content #best-sellers .container-full .features .products {
-    margin-top: 30px;
-    position: relative;
-    border-top: 1px solid black;
-    padding-top: 20px; }
-    .wrapper #content #best-sellers .container-full .features .products .product {
-      width: 33.33%;
-      float: left;
-      padding: 10px; }
-      .wrapper #content #best-sellers .container-full .features .products .product .cover-img {
-        width: 100%;
-        height: 80%; }
-        .wrapper #content #best-sellers .container-full .features .products .product .cover-img img {
-          width: 100%; }
-      .wrapper #content #best-sellers .container-full .features .products .product .name {
-        font-size: 16px;
-        margin: 5px 10px;
-        display: block; }
-      .wrapper #content #best-sellers .container-full .features .products .product .price {
-        font-size: 16px;
-        margin-left: 10px; }
+  .wrapper #content #best-sellers .container-full {
+    padding: 0 20px; }
+    .wrapper #content #best-sellers .container-full .col-lg-2 {
+      height: 100%; }
+    .wrapper #content #best-sellers .container-full .menu-vertical {
+      margin-top: 30px;
+      position: relative;
+      border: 1px solid black;
+      height: 100%;
+      padding: 30px; }
+      .wrapper #content #best-sellers .container-full .menu-vertical h4 {
+        font-size: 20px; }
+      .wrapper #content #best-sellers .container-full .menu-vertical ul {
+        margin-left: 20px;
+        list-style: none; }
+        .wrapper #content #best-sellers .container-full .menu-vertical ul li a {
+          font-size: 18px;
+          text-decoration: none; }
+    .wrapper #content #best-sellers .container-full .features .title-box {
+      border-bottom: 1px solid black; }
+      .wrapper #content #best-sellers .container-full .features .title-box .title {
+        font-size: 20px;
+        text-align: center; }
+    .wrapper #content #best-sellers .container-full .features .products {
+      margin-top: 30px;
+      position: relative;
+      border-top: 1px solid black;
+      padding-top: 20px; }
+      .wrapper #content #best-sellers .container-full .features .products .product {
+        width: 33.33%;
+        float: left;
+        padding: 10px; }
+        .wrapper #content #best-sellers .container-full .features .products .product .cover-img {
+          width: 100%;
+          height: 80%; }
+          .wrapper #content #best-sellers .container-full .features .products .product .cover-img img {
+            width: 100%; }
+        .wrapper #content #best-sellers .container-full .features .products .product .name {
+          font-size: 16px;
+          margin: 5px 10px;
+          display: block; }
+        .wrapper #content #best-sellers .container-full .features .products .product .price {
+          font-size: 16px;
+          margin-left: 10px; }
   .wrapper #content #hot-products {
     margin-top: 30px;
     position: relative;
     border-top: 1px solid black;
     padding: 20px 40px; }
     .wrapper #content #hot-products .cover-box {
-      width: 100%;
-      overflow-x: auto; }
+      width: 5000px;
+      overflow-x: hidden; }
       .wrapper #content #hot-products .cover-box .size-btn {
         position: absolute;
         font-size: 100px;
-        top: 40%; }
+        top: 40%;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 105; }
       .wrapper #content #hot-products .cover-box .btn-left {
         left: 0; }
       .wrapper #content #hot-products .cover-box .btn-right {
         right: 0; }
       .wrapper #content #hot-products .cover-box ul {
         width: 5000px;
-        list-style: none; }
+        list-style: none;
+        white-space: nowrap; }
         .wrapper #content #hot-products .cover-box ul li {
           float: left;
           width: 250px;
@@ -1342,7 +1405,8 @@ a {
             .wrapper #content #hot-products .cover-box ul li .product .cover-img {
               height: 80%; }
               .wrapper #content #hot-products .cover-box ul li .product .cover-img img {
-                width: 100%; }
+                width: 100%;
+                z-index: 100; }
             .wrapper #content #hot-products .cover-box ul li .product .name {
               font-size: 20px;
               margin: 5px 10px;
@@ -1601,7 +1665,7 @@ a {
     border-top: 2px solid black;
     margin-top: 20px; }
     .wrapper #footer .menu-box {
-      padding: 10px 5px; }
+      padding: 20px 20px; }
       .wrapper #footer .menu-box .box-left {
         width: 65%;
         float: left; }
@@ -1612,10 +1676,12 @@ a {
           .wrapper #footer .menu-box .box-left .box ul {
             list-style: none;
             margin-left: 10px; }
-            .wrapper #footer .menu-box .box-left .box ul li a {
-              color: black;
-              text-decoration: none;
-              font-size: 16px; }
+            .wrapper #footer .menu-box .box-left .box ul li {
+              margin: 5px 0; }
+              .wrapper #footer .menu-box .box-left .box ul li a {
+                color: black;
+                text-decoration: none;
+                font-size: 13px; }
       .wrapper #footer .menu-box .box-right {
         width: 35%;
         float: right; }
@@ -1646,10 +1712,9 @@ a {
                 border: 1px solid black;
                 padding: 10px;
                 font-size: 20px;
-                box-shadow: none;
                 border-radius: 20px; }
               .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook {
-                padding: 12px; }
+                padding: 13px; }
                 .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.facebook:hover {
                   color: white;
                   background-color: #3a5b93;
@@ -1658,13 +1723,21 @@ a {
                 color: white;
                 background-color: #00a3ec;
                 border: none; }
+              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.google:hover {
+                color: #f99;
+                background-color: #00a3ec;
+                border: none; }
+              .wrapper #footer .menu-box .box-right .contact .social-link ul li a i.pinterest:hover {
+                color: white;
+                background-color: #f97;
+                border: none; }
     .wrapper #footer .copyright {
       height: 40px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
       .wrapper #footer .copyright span {
-        font-size: 20px;
+        font-size: 16px;
         color: white; } }
 @media screen and (min-width: 1200px) {
   .hidden-lage-screen {
@@ -1920,7 +1993,10 @@ a {
         position: absolute;
         font-size: 100px;
         top: 40%;
-        z-index: 105; }
+        z-index: 105;
+        background: transparent;
+        border: none;
+        cursor: pointer; }
       .wrapper #content #hot-products .cover-box .btn-left {
         left: 0; }
       .wrapper #content #hot-products .cover-box .btn-right {
