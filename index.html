@@ -29,12 +29,29 @@
 									<a href="men.html">Men</a>
 									<div class="menu-child">
 										<ul>
-											<li><a href="">T-Shirt</a></li>
-											<li><a href="">Shirt</a></li>
-											<li><a href="">Jacket</a></li>
-											<li><a href="">Trouser</a></li>
-											<li><a href="">Jean</a></li>
-											<li><a href="">Khaki</a></li>
+											<li>
+												<div href="">Shirt</div>
+												<ul>
+													<li><a href="">T-Shirt</a></li>
+													<li><a href="">Shirt</a></li>
+													<li><a href="">Somi</a></li>
+												</ul>
+											</li>
+											<li>
+												<div href="">Trousers</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Khaki</a></li>
+												</ul>
+											</li>
+
+											<li>
+												<div href="">Jacket</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Kaki</a></li>
+												</ul>
+											</li>
 										</ul>
 										<div class="box-img">
 											<img src="img/men-logo.jpeg" alt="">
@@ -46,19 +63,36 @@
 									<a href="women.html">Women</a>
 									<div class="menu-child">
 										<ul>
-											<li><a href="">T-Shirt</a></li>
-											<li><a href="">Shirt</a></li>
-											<li><a href="">Jacket</a></li>
-											<li><a href="">Trouser</a></li>
-											<li><a href="">Jean</a></li>
-											<li><a href="">Khaki</a></li>
+											<li>
+												<div href="">Shirt</div>
+												<ul>
+													<li><a href="">T-Shirt</a></li>
+													<li><a href="">Shirt</a></li>
+													<li><a href="">Somi</a></li>
+												</ul>
+											</li>
+											<li>
+												<div href="">Trousers</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Khaki</a></li>
+												</ul>
+											</li>
+
+											<li>
+												<div href="">Jacket</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Kaki</a></li>
+												</ul>
+											</li>
 										</ul>
 										<div class="box-img">
 											<img src="img/women-logo.jpg" alt="">
 										</div>
 									</div>
 								</li>
-								<li><a href="">Brands</a></li>
+								<!-- <li><a href="">Brands</a></li> -->
 							</ul>
 						</div>
 					</div>
@@ -70,9 +104,9 @@
 					</div>
 					<div class="col-md-2 col-lg-2 ">
 						<div class="cover account-box">
-							<a class="bag" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>
+							<a class="bag" href="cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i>
 							</a>
-							<a class="account" href="">Account &#x25be;</a>
+							<button class="account" id="account"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</button>
 							
 						</div>
 					</div>
@@ -124,7 +158,7 @@
 					</div>
 				</div>
 			</nav>
-		</header><!-- /header -->
+		</header>
 		
 		<div class="content" id="content">
 			<section id="head-slide">
@@ -132,11 +166,20 @@
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
 							<div class="slide-box">
-								<button class="btn-shop btn-men">MEN</button>
-								<button class="btn-shop btn-women">WOMEN</button>
-								<ul>
+								<a href="men.html" href="men.html">
+									<button class="btn-shop btn-men">MEN</button>
+								</a>
+								<a href="women.html">
+									<button class="btn-shop btn-women">WOMEN</button>
+								</a>
+								
+								<ul id="list-images-head">
 									<li>
 										<img src="img/men.png" alt="men image">
+										
+									</li>
+									<li>
+										<img src="img/women.png" alt="men image">
 										
 									</li>
 								</ul>
@@ -371,7 +414,7 @@
 								<i class="btn-right size-btn fa fa-angle-right " aria-hidden="true"></i>
 
 								<div class="box-title">Hot Products</div>
-								<ul>
+								<ul id="list-hot-products">
 									<li>
 										<div class="product">
 											<a href="detail.html">
@@ -439,6 +482,72 @@
 											<span class="price">$200</span>
 										</div>
 									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-3.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-4.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-5.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-6.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-7.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-8.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</div>
@@ -448,7 +557,7 @@
 			<section id="login-register">
 				<div class="box-title-login">
 					<span>Log in & Register</span>
-					<button class="close">X</button>
+					<button class="close" id="close-login-box">X</button>
 				</div>
 				<div class="box-content">
 					<div class="cover-content">
@@ -560,4 +669,5 @@
 		</footer>
 	</div>
 </body>
+<script type="text/javascript" src="js/app.js"></script>
 </html>

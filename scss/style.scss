@@ -2273,6 +2273,8 @@ a{
 						ul {
 							list-style: none;
 							li {
+								
+								height: 34px;
 								float: left;
 								margin-left: 20px;
 								a{
@@ -2289,15 +2291,33 @@ a{
 									top: 60px;
 									width: 100%;
 									height: 200px;
-									
 									overflow: hidden;
 									border-bottom: 1px solid black;
 									background-color: white;
+									padding-top: 10px;
 									z-index: 101;
 									display: none;
 									ul{
 										width: 70%;
 										float: left;
+										li{
+											width: 30%;
+											float: left;
+											//border: 1px solid black;
+											font-size: 20px;
+											ul{
+												width: 90%;
+												margin-left: -10px;
+												li{
+													width: 100%;
+													display: block;
+													//border-bottom: 1px dotted black;
+													a{
+														font-size: 16px;
+													}
+												}
+											}
+										}
 									}
 									.box-img {
 										width: 30%;
@@ -2338,7 +2358,7 @@ a{
 					}
 					.account-box{
 						margin-top: 8px;
-						a.account{
+						.account{
 							float: right;
 							margin-top: 18px;
 							padding: 0 3px;
@@ -2346,6 +2366,8 @@ a{
 							text-decoration: none;
 							border: 1px solid black;
 							border-radius: 3px;
+							background-color: #fff;
+							cursor: pointer;
 						}
 
 						.bag {
@@ -2358,8 +2380,11 @@ a{
 		}
 		#content {
 			#head-slide {
+				position: relative;
 				.slide-box {
-					position: relative;
+					
+					margin-top: -1px;
+					width: 100%;
 					.btn-shop{
 						position: absolute;
 						bottom: 20%;
@@ -2386,14 +2411,14 @@ a{
 						height: 70px;
 
 					}
-
 					ul {
-
+						width: 5000px;
+						white-space: nowrap;
 						li{
-							width: 100%;
+							width: 1280px;
 							max-height: 600px;
 							overflow: hidden;
-
+							float: left;
 							img{
 								width: 100%;
 								z-index: 100;
@@ -2501,15 +2526,15 @@ a{
 				position: relative;
 				border-top: 1px solid black;
 				padding: 20px 40px;
-
+				overflow-x: hidden;
 				.cover-box {
 					width: 100%;
-					overflow-x: auto;
+					
 					.size-btn {
 						position: absolute;
 						font-size: 100px;
 						top: 40%;
-
+						z-index: 105;
 					}
 					.btn-left {
 						left: 0;
@@ -2522,6 +2547,7 @@ a{
 					ul{
 						width: 5000px;
 						list-style: none;
+						white-space: nowrap;
 						li{
 							float: left;
 							width: 250px;
@@ -2535,6 +2561,7 @@ a{
 									height: 80%;
 									img{
 										width: 100%;
+										z-index: 100;
 									}
 								}
 								.name{
@@ -2994,10 +3021,11 @@ a{
 							list-style: none;
 							margin-left: 10px;
 							li{
+								margin: 5px 0;
 								a{
 									color: black;
 									text-decoration: none;
-									font-size: 16px;
+									font-size: 13px;
 								}
 							}
 						}
@@ -3047,7 +3075,7 @@ a{
 
 										}
 										i.facebook{
-											padding: 12px;
+											padding: 13px;
 											&:hover {
 												color: white;
 												background-color: #3a5b93;
@@ -3058,6 +3086,20 @@ a{
 											&:hover {
 												color: white;
 												background-color: #00a3ec;
+												border: none;
+											}
+										}
+										i.google{
+											&:hover {
+												color: #f99;
+												background-color: #00a3ec;
+												border: none;
+											}
+										}
+										i.pinterest{
+											&:hover {
+												color: white;
+												background-color: #f97;
 												border: none;
 											}
 										}
@@ -3075,7 +3117,7 @@ a{
 				padding-top: 10px;
 				background-color: black;
 				span{
-					font-size: 20px;
+					font-size: 16px;
 					color: white;
 				}
 			}
