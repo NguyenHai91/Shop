@@ -24,17 +24,34 @@
 					<div class="col-md-5 col-lg-4 ">
 						<div class="cover menu">
 							<ul>
-								<li><a class="active" href="men.html">Home</a></li>
+								<li><a href="index.html">Home</a></li>
 								<li>
 									<a href="men.html">Men</a>
 									<div class="menu-child">
 										<ul>
-											<li><a href="">T-Shirt</a></li>
-											<li><a href="">Shirt</a></li>
-											<li><a href="">Jacket</a></li>
-											<li><a href="">Trouser</a></li>
-											<li><a href="">Jean</a></li>
-											<li><a href="">Khaki</a></li>
+											<li>
+												<div href="">Shirt</div>
+												<ul>
+													<li><a href="">T-Shirt</a></li>
+													<li><a href="">Shirt</a></li>
+													<li><a href="">Somi</a></li>
+												</ul>
+											</li>
+											<li>
+												<div href="">Trousers</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Khaki</a></li>
+												</ul>
+											</li>
+
+											<li>
+												<div href="">Jacket</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Kaki</a></li>
+												</ul>
+											</li>
 										</ul>
 										<div class="box-img">
 											<img src="img/men-logo.jpeg" alt="">
@@ -46,19 +63,36 @@
 									<a href="women.html">Women</a>
 									<div class="menu-child">
 										<ul>
-											<li><a href="">T-Shirt</a></li>
-											<li><a href="">Shirt</a></li>
-											<li><a href="">Jacket</a></li>
-											<li><a href="">Trouser</a></li>
-											<li><a href="">Jean</a></li>
-											<li><a href="">Khaki</a></li>
+											<li>
+												<div href="">Shirt</div>
+												<ul>
+													<li><a href="">T-Shirt</a></li>
+													<li><a href="">Shirt</a></li>
+													<li><a href="">Somi</a></li>
+												</ul>
+											</li>
+											<li>
+												<div href="">Trousers</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Khaki</a></li>
+												</ul>
+											</li>
+
+											<li>
+												<div href="">Jacket</div>
+												<ul>
+													<li><a href="">Jean</a></li>
+													<li><a href="">Kaki</a></li>
+												</ul>
+											</li>
 										</ul>
 										<div class="box-img">
 											<img src="img/women-logo.jpg" alt="">
 										</div>
 									</div>
 								</li>
-								<li><a href="">Brands</a></li>
+								
 							</ul>
 						</div>
 					</div>
@@ -72,7 +106,7 @@
 						<div class="cover account-box">
 							<a class="bag" href=""><i class="fa fa-shopping-bag" aria-hidden="true"></i>
 							</a>
-							<a class="account" href="">Account &#x25be;</a>
+							<button class="account" id="account"><i class="fa fa-sign-in" aria-hidden="true"></i> Log in</button>
 							
 						</div>
 					</div>
@@ -156,7 +190,7 @@
 								<button class="violet"></button>
 							</div>
 							<button>Add to cart</button>
-							<button>Buy Now</button>
+							<button><a href="checkout.html">Buy Now</a></button>
 						</div>
 					</div>
 					
@@ -167,70 +201,190 @@
 					<div class="row">
 						<div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
 							<div class="cover-box">
-								<i class="btn-left size-btn fa fa-angle-left " aria-hidden="true"></i>
-								<i class="btn-right size-btn fa fa-angle-right " aria-hidden="true"></i>
-
+								<button class="btn-left size-btn" id="btn-prev">
+									<i class=" fa fa-angle-left " aria-hidden="true"></i>
+								</button>
+								<button class="btn-right size-btn" id="btn-next">
+									<i class=" fa fa-angle-right " aria-hidden="true"></i>
+								</button>
 								<div class="box-title">Hot Products</div>
-								<ul>
+								<ul id="list-hot-products">
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/women-1.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/men-1.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/women-2.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/men-2.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/women-3.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/men-3.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/men-4.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/men-1.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-1.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/men-2.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-2.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
 									<li>
 										<div class="product">
-											<div class="cover-img">
-												<img src="img/men-3.jpg" alt="">
-											</div>
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-3.jpg" alt="">
+												</div>
+											</a>
 											<span class="name">adidas Performance</span>
 											<span class="price">$200</span>
 										</div>
 									</li>
-									
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-4.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-5.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-6.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-7.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
+									<li>
+										<div class="product">
+											<a href="detail.html">
+												<div class="cover-img">
+													<img src="img/women-8.jpg" alt="">
+												</div>
+											</a>
+											<span class="name">adidas Performance</span>
+											<span class="price">$200</span>
+										</div>
+									</li>
 								</ul>
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section id="login-register">
+				<div class="box-title-login">
+					<span>Log in & Register</span>
+					<button class="close" id="close-login-box">X</button>
+				</div>
+				<div class="box-content">
+					<div class="cover-content">
+						<div class="login">
+							<div class="box-title">Log in</div>
+							<input type="text" name="user-name" placeholder="User Name">
+							<input type="" name="password" placeholder="Password">
+							<button class="btn-login">Log in</button>
+							<a class="forget-password" href="#">Forget password !</a>
+						</div>
+						<div class="register">
+							<div class="box-title">Register</div>
+							<input type="text" name="first-name" placeholder="First Name">
+							<input type="text" name="last-name" placeholder="Last Name">
+							<input type="text" name="user-name" placeholder="User Name">
+							<input type="email" name="email" placeholder="Email">
+							<input type="text" name="password" placeholder="Password">
+							<input type="text" name="re-password" placeholder="Re-Password">
+							<div class="gender">
+								<span>Genders</span>
+								<input id="male" type="radio" name="gender">
+								<label for="male">Male</label>
+								<input id="female" type="radio" name="gender">
+								<label for="female">Female</label>
+							</div>
+							<div class="birthday">
+								<span>Birthday</span>
+								<input type="date" name="birthday">
+							</div>
+							<button class="btn-register">Register</button>
+						</div>
+					</div>
+
 				</div>
 			</section>
 			
@@ -272,7 +426,7 @@
 					</div>
 					<div class="box-right">
 						<div class="contact">
-							<h4>CONTACT</h4>
+							<h4 class="title">CONTACT</h4>
 							<p class="status">Stay in touch</p>
 							<div class="send-mail">
 

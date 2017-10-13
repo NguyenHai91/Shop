@@ -557,7 +557,7 @@ a{
 					}
 					.box-total {
 						.total-cost {
-							height: 100px;
+							height: 70px;
 							font-size: 20px;
 							color: #f70;
 							float: right;
@@ -579,6 +579,7 @@ a{
 						.btn-continues {
 							height: 40px;
 							padding: 0 20px;
+							margin-top: 20px;
 							font-size: 20px;
 							background-color: #0bf;
 							border: none;
@@ -1883,14 +1884,13 @@ a{
 				position: relative;
 				border-top: 1px solid black;
 				padding: 20px 40px;
-
+				
 				.cover-box {
-					width: 5000px;
 					overflow-x: hidden;
 					.size-btn {
 						position: absolute;
 						font-size: 100px;
-						top: 40%;
+						top: 30%;
 						background: transparent;
 						border: none;
 						cursor: pointer;
@@ -2464,10 +2464,12 @@ a{
 									font-size: 23px;
 									text-decoration: none;
 									color: black;
+
 								}
 								.active {
 									border-bottom: 1px solid #000000;
 								}
+								
 								.menu-child {
 									position: absolute;
 									left: 0;
@@ -2722,7 +2724,7 @@ a{
 					.size-btn {
 						position: absolute;
 						font-size: 100px;
-						top: 40%;
+						top: 30%;
 						z-index: 105;
 						background: transparent;
 						border: none;
@@ -2771,14 +2773,16 @@ a{
 				}
 			}
 			#details-product {
-				padding: 0 30px;
+				padding: 20px 30px;
 				.left {
-					width: 60%;
+					width: 50%;
 					float: left;
 					.main-image {
-						margin-right: 20px;
+						margin: 20px;
+						margin-left: 0;
+						height: 450px;
 						img {
-							width: 100%;
+							height: 100%;
 						}
 					}
 					.wrap-list {
@@ -2791,12 +2795,15 @@ a{
 								img {
 									width: 100%;
 								}
+								&:hover {
+									border: 1px solid #f97;
+								}
 							}
 						}
 					}
 				}
 				.right {
-					width: 40%;
+					width: 50%;
 					float: right;
 					.name-product {
 						font-size: 20px;
@@ -2814,7 +2821,7 @@ a{
 							height: 30px;
 							text-align: right;
 							font-size: 18px;
-							margin-left: -3px;
+							margin-left: -2spx;
 							border: none;
 							border-top: 1px solid black;
 							border-bottom: 1px solid black;
@@ -2867,6 +2874,11 @@ a{
 						background-color: #ccc;
 						border: 1px solid black;
 						cursor: pointer;
+					}
+					button{
+						a{
+							text-decoration: none;
+						}
 					}
 				}
 			}
