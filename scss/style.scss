@@ -80,15 +80,15 @@ a{
 		background-color: white;
 	}
 
-
 	.wrapper {
 		#navbar{
 			position: relative;
+			padding: 0 10px;
 			border-bottom: 1px solid black;
 			.btn-bag{
 				width: 40px;
 				height: 40px;
-				padding: 6px;
+				padding-top: 10px;
 				text-align: center;
 				i {
 					font-size: 28px;
@@ -96,7 +96,7 @@ a{
 			}
 			.logo-shop{
 				height: 50px;
-				padding: 5px;
+				padding-top: 3px;
 				text-align: center;
 				p{
 					font-family: SagonaFF;
@@ -110,7 +110,7 @@ a{
 			}
 			.btn-menu{
 				height: 40px;
-				padding: 6px;
+				padding-top: 10px;
 				text-align: center;
 				float: right;
 				i {
@@ -124,7 +124,7 @@ a{
 				left: 0;
 				width: 100%;
 				color: #fff;
-				background-color: #595A56;
+				background-color: #000;
 				display: none;
 				z-index: 200;
 				ul {
@@ -137,14 +137,19 @@ a{
 						.title-menu {
 							font-size: 20px;
 							padding-top: 0;
-							background-color: #000;
+							color: #f97;
+						}
+						h4{
+							color: #f97;
+							font-size: 20px;
 						}
 						a{
 							color: #fff;
 							text-decoration: none;
-							font-size: 20px;
-							
+							font-size: 16px;
 						}
+
+
 						.box-search {
 
 							input {
@@ -845,7 +850,7 @@ a{
 			.btn-bag{
 				width: 40px;
 				height: 40px;
-				padding: 6px;
+				margin-top: 8px;
 				text-align: center;
 				i {
 					font-size: 28px;
@@ -871,7 +876,7 @@ a{
 				padding: 6px;
 				text-align: center;
 				float: right;
-				margin-top: 5px;
+				margin-top: 8px;
 				i {
 					font-size: 28px;
 
@@ -897,12 +902,16 @@ a{
 						.title-menu {
 							font-size: 20px;
 							padding-top: 0;
-							color: #fff;
+							color: #F75F23;
+						}
+						h4{
+							font-size: 20px;
+							color: #F75F23;
 						}
 						a{
 							color: #fff;
 							text-decoration: none;
-							font-size: 20px;
+							font-size: 16px;
 							
 						}
 						.box-search {
@@ -2821,7 +2830,7 @@ a{
 							height: 30px;
 							text-align: right;
 							font-size: 18px;
-							margin-left: -2spx;
+							margin-left: -2px;
 							border: none;
 							border-top: 1px solid black;
 							border-bottom: 1px solid black;
