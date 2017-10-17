@@ -125,23 +125,36 @@ window.addEventListener("DOMContentLoaded", function (events)
 	// pick color 
 	let listColors = document.getElementById("list-color");
 	let listRadio = listColors.querySelectorAll(".radio-color");
+	let listBtnColor = listColors.querySelectorAll(".btn-color");
 	console.log(listRadio);
 	listRadio[0].addEventListener("click",function(event)
 	{
 		if(this.checked === true){
 			console.log(0);
+			for (let i = 0; i < listBtnColor.length; i++) {
+				listBtnColor[i].style.border = 'none';
+			}
+			listBtnColor[0].style.border = '2px solid #000';
 		}
 	});
 	listRadio[1].addEventListener("click",function(event)
 	{
 		if(this.checked === true){
 			console.log(1);
+			for (let i = 0; i < listBtnColor.length; i++) {
+				listBtnColor[i].style.border = 'none';
+			}
+			listBtnColor[1].style.border = '2px solid #000';
 		}
 	});
 	listRadio[2].addEventListener("click",function(event)
 	{
 		if(this.checked === true){
 			console.log(2);
+			for (let i = 0; i < listBtnColor.length; i++) {
+				listBtnColor[i].style.border = 'none';
+			}
+			listBtnColor[2].style.border = '2px solid #000';
 		}
 	});
 
