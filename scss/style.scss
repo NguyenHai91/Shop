@@ -134,8 +134,9 @@ a{
 			}
 			.logo-shop{
 				height: 50px;
-				padding-top: 3px;
+				padding: 5px;
 				text-align: center;
+				margin-top: -5px;
 				p{
 					font-family: SagonaFF;
 					font-size: 25px;
@@ -785,13 +786,13 @@ a{
 					width: 100%;
 					float: left;
 					.main-image {
-						margin: 20px;
+						margin-top: 20px;
 						margin-left: 0;
-						height: 450px;
+						//height: 450px;
 						float: left;
-						width: 70%;
+						width: 75%;
 						img {
-							height: 100%;
+							width: 100%;
 						}
 					}
 					.wrap-list {
@@ -801,8 +802,7 @@ a{
 						ul {
 							list-style: none;
 							li {
-								width: 70px;
-								margin-right: 10px;
+								width: 100%;
 								img {
 									width: 100%;
 								}
@@ -821,15 +821,15 @@ a{
 						margin: 20px 0;
 					}
 					.name-product {
-						font-size: 20px;
-						margin: 20px 0;
+						font-size: 18px;
+						margin-top: 20px;
 					}
 					.id-product {
 						font-size: 14px;
-						margin-bottom: 10px;
+						margin: 10px 0;
 					}
 					.price-product {
-						font-size: 25px;
+						font-size: 20px;
 						
 					}
 					.size-select {
@@ -850,55 +850,50 @@ a{
 							width: 50px;
 							height: 30px;
 							text-align: center;
-							font-size: 18px;
-							margin-left: -2px;
+							font-size: 13px;
+							margin: 0 2px;
 							border: none;
-							border-top: 1px solid black;
-							border-bottom: 1px solid black;
+							border: 1px solid black;
 
 						}
 						button {
 							width: 30px;
 							height: 30px;
-							font-size: 18px;
+							font-size: 14px;
 						}
-						button.plus {
-							margin-left: -4px;
+						.btn-plus {
 							margin-right: 20px;
 							border: 1px solid black;
 						}
-						button.sub {
-							margin-left: 0px;
-							margin-right: 0;
+						.btn-sub {
 							border: 1px solid black;
 						}
 					}
-					.colors {
+					ul#list-color{
+						list-style: none;
 						margin: 20px 0;
-						width: 200px;
-						height: 50px;
+						width: 260px;
+						height: 35px;
 						display: block;
-						option.red {
-							background-color: red;
-						}
-						.green {
-							span{
+						li{
+							float: left;
+							margin-right: 10px;
+							input[type="radio"] {
+								display: none;
+							}
+							.btn-color {
+								padding: 10px 20px;
+								background-color: #000;
+								cursor: pointer;
+							}
+							.color1 {
+								background-color: yellow;
+							}
+							.color2 {
+								background-color: red;
+							}
+							.color3 {
 								background-color: green;
-							}
-						}
-						.blue {
-							span{
-								background-color: blue;
-							}
-						}
-						.orange {
-							span{
-								background-color: orange;
-							}
-						}
-						.violet {
-							span {
-								background-color: violet;
 							}
 						}
 					}
@@ -983,6 +978,7 @@ a{
 								height: 30px;
 								min-width: 70%;
 								border: 1px solid black;
+								padding-left: 3px;
 							}
 							.send {
 								width: 70px;
@@ -1810,21 +1806,20 @@ a{
 					.main-image {
 						margin: 20px;
 						margin-left: 0;
-						height: 450px;
 						float: left;
 						width: 70%;
 						img {
-							height: 100%;
+							width: 100%;
 						}
 					}
 					.wrap-list {
 						float: right;
-						width: 20%;
+						width: 15%;
 						margin-top: 20px;
 						ul {
 							list-style: none;
 							li {
-								width: 70px;
+								width: 80%;
 								margin-right: 10px;
 								img {
 									width: 100%;
@@ -1844,15 +1839,15 @@ a{
 						margin: 20px 0;
 					}
 					.name-product {
-						font-size: 20px;
-						margin: 20px 0;
+						font-size: 18px;
+						margin-top: 20px;
 					}
 					.id-product {
 						font-size: 14px;
-						margin-bottom: 10px;
+						margin: 10px 0;
 					}
 					.price-product {
-						font-size: 25px;
+						font-size: 20px;
 						
 					}
 					.size-select {
@@ -1874,10 +1869,9 @@ a{
 							height: 30px;
 							text-align: center;
 							font-size: 18px;
-							margin-left: -2px;
+							margin: 0 2px;
 							border: none;
-							border-top: 1px solid black;
-							border-bottom: 1px solid black;
+							border: 1px solid black;
 
 						}
 						button {
@@ -1885,47 +1879,42 @@ a{
 							height: 30px;
 							font-size: 18px;
 						}
-						button.plus {
-							margin-left: -4px;
+						.btn-plus {
 							margin-right: 20px;
 							border: 1px solid black;
 						}
-						button.sub {
-							margin-left: 0px;
-							margin-right: 0;
+						.btn-sub {
 							border: 1px solid black;
 						}
 					}
-					.colors {
+					ul#list-color{
+						list-style: none;
 						margin: 20px 0;
-						width: 200px;
-						height: 50px;
+						width: 260px;
+						height: 35px;
 						display: block;
-						option.red {
-							background-color: red;
-						}
-						.green {
-							span{
+						li{
+							float: left;
+							margin-right: 10px;
+							input[type="radio"] {
+								display: none;
+							}
+							.btn-color {
+								padding: 10px 20px;
+								background-color: #000;
+								cursor: pointer;
+							}
+							.color1 {
+								background-color: yellow;
+							}
+							.color2 {
+								background-color: red;
+							}
+							.color3 {
 								background-color: green;
 							}
 						}
-						.blue {
-							span{
-								background-color: blue;
-							}
-						}
-						.orange {
-							span{
-								background-color: orange;
-							}
-						}
-						.violet {
-							span {
-								background-color: violet;
-							}
-						}
-					}
-					
+					}					
 					.add-cart {
 						margin-right: 20px;
 						background-color: #0bf;
@@ -2547,11 +2536,10 @@ a{
 					.main-image {
 						margin: 20px;
 						margin-left: 0;
-						height: 450px;
 						float: left;
-						width: 70%;
+						width: 75%;
 						img {
-							height: 100%;
+							width: 100%;
 						}
 					}
 					.wrap-list {
@@ -2581,15 +2569,15 @@ a{
 						margin: 20px 0;
 					}
 					.name-product {
-						font-size: 20px;
-						margin: 20px 0;
+						font-size: 18px;
+						margin-top: 20px;
 					}
 					.id-product {
 						font-size: 14px;
-						margin-bottom: 10px;
+						margin: 10px 0;
 					}
 					.price-product {
-						font-size: 25px;
+						font-size: 20px;
 						
 					}
 					.size-select {
@@ -2611,10 +2599,9 @@ a{
 							height: 30px;
 							text-align: center;
 							font-size: 18px;
-							margin-left: -2px;
+							margin: 0 2px;
 							border: none;
-							border-top: 1px solid black;
-							border-bottom: 1px solid black;
+							border: 1px solid black;
 
 						}
 						button {
@@ -2622,43 +2609,39 @@ a{
 							height: 30px;
 							font-size: 18px;
 						}
-						button.plus {
-							margin-left: -4px;
+						.btn-plus {
 							margin-right: 20px;
 							border: 1px solid black;
 						}
-						button.sub {
-							margin-left: 0px;
-							margin-right: 0;
+						.btn-sub {
 							border: 1px solid black;
 						}
 					}
-					.colors {
+					ul#list-color{
+						list-style: none;
 						margin: 20px 0;
-						width: 200px;
-						height: 50px;
+						width: 260px;
+						height: 35px;
 						display: block;
-						option.red {
-							background-color: red;
-						}
-						.green {
-							span{
+						li{
+							float: left;
+							margin-right: 10px;
+							input[type="radio"] {
+								display: none;
+							}
+							.btn-color {
+								padding: 10px 20px;
+								background-color: #000;
+								cursor: pointer;
+							}
+							.color1 {
+								background-color: yellow;
+							}
+							.color2 {
+								background-color: red;
+							}
+							.color3 {
 								background-color: green;
-							}
-						}
-						.blue {
-							span{
-								background-color: blue;
-							}
-						}
-						.orange {
-							span{
-								background-color: orange;
-							}
-						}
-						.violet {
-							span {
-								background-color: violet;
 							}
 						}
 					}
@@ -3641,24 +3624,25 @@ a{
 				.left {
 					width: 50%;
 					float: left;
+					padding-right: 20px;
 					.main-image {
 						margin: 20px;
 						margin-left: 0;
-						height: 450px;
 						float: left;
-						width: 70%;
+						width: 80%;
+						overflow: hidden;
 						img {
-							height: 100%;
+							width: 100%;
 						}
 					}
 					.wrap-list {
 						float: right;
-						width: 20%;
+						width: 15%;
 						margin-top: 20px;
 						ul {
 							list-style: none;
 							li {
-								width: 70px;
+								width: 80%;
 								margin-right: 10px;
 								img {
 									width: 100%;
@@ -3729,32 +3713,31 @@ a{
 							border: 1px solid black;
 						}
 					}
-					.colors {
+					ul#list-color{
+						list-style: none;
 						margin: 20px 0;
 						width: 260px;
 						height: 35px;
 						display: block;
-						option.red {
-							background-color: red;
-						}
-						.green {
-							span{
+						li{
+							float: left;
+							margin-right: 10px;
+							input[type="radio"] {
+								display: none;
+							}
+							.btn-color {
+								padding: 10px 20px;
+								background-color: #000;
+								cursor: pointer;
+							}
+							.color1 {
+								background-color: yellow;
+							}
+							.color2 {
+								background-color: red;
+							}
+							.color3 {
 								background-color: green;
-							}
-						}
-						.blue {
-							span{
-								background-color: blue;
-							}
-						}
-						.orange {
-							span{
-								background-color: orange;
-							}
-						}
-						.violet {
-							span {
-								background-color: violet;
 							}
 						}
 					}

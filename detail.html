@@ -30,23 +30,23 @@
 									<div class="menu-child">
 										<ul>
 											<li>
-												<a href="">T-Shirt</a>
+												<a href="product.html">T-Shirt</a>
 											</li>
 											<li>
-												<a href="">Shirt</a>
+												<a href="product.html">Shirt</a>
 											</li>
 											<li>
-												<a href="">Trousers</a>
+												<a href="product.html">Trousers</a>
 											</li>
 
 											<li>
-												<a href="">Jacket</a>
+												<a href="product.html">Jacket</a>
 											</li>
 											<li>
-												<a href="">Jean</a>
+												<a href="product.html">Jean</a>
 											</li>
 											<li>
-												<a href="">Khaki</a>
+												<a href="product.html">Khaki</a>
 											</li>
 										</ul>
 										<div class="box-img">
@@ -60,23 +60,23 @@
 									<div class="menu-child">
 										<ul>
 											<li>
-												<a href="">T-Shirt</a>
+												<a href="product.html">T-Shirt</a>
 											</li>
 											<li>
-												<a href="">Shirt</a>
+												<a href="product.html">Shirt</a>
 											</li>
 											<li>
-												<a href="">Trousers</a>
+												<a href="product.html">Trousers</a>
 											</li>
 
 											<li>
-												<a href="">Jacket</a>
+												<a href="product.html">Jacket</a>
 											</li>
 											<li>
-												<a href="">Jean</a>
+												<a href="product.html">Jean</a>
 											</li>
 											<li>
-												<a href="">Khaki</a>
+												<a href="product.html">Khaki</a>
 											</li>
 										</ul>
 										<div class="box-img">
@@ -107,14 +107,16 @@
 				<div class="hidden-desktop hidden-lage-screen row ">
 					<div class="col-xs-2 col-sm-2">
 						<div class="btn-bag">
-							<i class="fa fa-shopping-bag" aria-hidden="true"></i>
-							<span class="indicator">1</span>
+							<a href="cart.html">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+								<span class="indicator">1</span>
+							</a>
 						</div>
 					</div>
 
 					<div class="col-xs-8 col-sm-8">
 						<div class="logo-shop">
-							<span>Fashion & Shop</span>
+							<p>Fashion & <span>Style</span></p>
 						</div>
 					</div>
 					<div class="col-xs-2 col-sm-2">
@@ -125,29 +127,35 @@
 					</div>
 					<div class="mobile-menu" id="mobile-menu">
 						<ul>
-							<li><h3 class="title-menu">Categories</h3></li>
+							<li>
+								<h3 class="title-menu">Categories</h3>
+							</li>
 							<li>
 								<div class="box-search">
 									<input type="text" name="" placeholder="search">
-									
+
 								</div>
-								
+
 							</li>
-							<li><h4>For Men</h4></li>
-							<li><a href="">T-Shirt</a></li>
-							<li><a href="">Shirt</a></li>
-							<li><a href="">Jacket</a></li>
-							<li><a href="">Trousers</a></li>
-							<li><a href="">Jean</a></li>
-							<li><a href="">Khaki</a></li>
-							<li><h4>For Women</h4></li>
-							<li><a href="">T-Shirt</a></li>
-							<li><a href="">Shirt</a></li>
-							<li><a href="">Jacket</a></li>
-							<li><a href="">Trousers</a></li>
-							<li><a href="">Jean</a></li>
-							<li><a href="">Khaki</a></li>
-							<li><a href="">Account</a></li>
+							<li>
+								<h4>For Men</h4>
+							</li>
+							<li><a href="product.html">T-Shirt</a></li>
+							<li><a href="product.html">Shirt</a></li>
+							<li><a href="product.html">Jacket</a></li>
+							<li><a href="product.html">Trousers</a></li>
+							<li><a href="product.html">Jean</a></li>
+							<li><a href="product.html">Khaki</a></li>
+							<li>
+								<h4>For Women</h4>
+							</li>
+							<li><a href="product.html">T-Shirt</a></li>
+							<li><a href="product.html">Shirt</a></li>
+							<li><a href="product.html">Jacket</a></li>
+							<li><a href="product.html">Trousers</a></li>
+							<li><a href="product.html">Jean</a></li>
+							<li><a href="product.html">Khaki</a></li>
+							<li><a href="product.html">Account</a></li>
 						</ul>
 					</div>
 				</div>
@@ -184,12 +192,20 @@
 								<option>L</option>
 								<option>XL</option>
 							</select>
-							<select class="colors">
-								<option  class="red" value="red"></option>
-								<option class="blue" value="blue"><span></span></option>
-								<option class="green" value="green"><span></span></option>
-								<option class="yellow" value="yellow"><span></span></option>
-							</select>
+							<ul id="list-color">
+								<li>
+									<label class="btn-color color1" for="color1">  </label>
+									<input class="radio-color" type="radio" name="color" id="color1">
+								</li>
+								<li>
+									<label class="btn-color color2" for="color2">  </label>
+									<input class="radio-color" type="radio" name="color" id="color2">
+								</li>
+								<li>
+									<label class="btn-color color3" for="color3">  </label>
+									<input class="radio-color" type="radio" name="color" id="color3">
+								</li>
+							</ul>
 							<button class="add-cart"><a href="cart.html">Add to cart</a></button>
 							<button class="checkout"><a href="checkout.html">Buy Now</a></button>
 							<div class="info-product">
@@ -444,7 +460,7 @@
 					<div class="box-right">
 						<div class="contact">
 							<h4 class="title">CONTACT</h4>
-							<p class="status">Stay in touch</p>
+							<p class="status">Get info from us !</p>
 							<div class="send-mail">
 
 								<input type="email" name="" placeholder="your mail">

@@ -139,8 +139,9 @@ a {
         z-index: 105; }
     .wrapper #navbar .logo-shop {
       height: 50px;
-      padding-top: 3px;
-      text-align: center; }
+      padding: 5px;
+      text-align: center;
+      margin-top: -5px; }
       .wrapper #navbar .logo-shop p {
         font-family: SagonaFF;
         font-size: 25px; }
@@ -626,13 +627,12 @@ a {
       width: 100%;
       float: left; }
       .wrapper #content #details-product .left .main-image {
-        margin: 20px;
+        margin-top: 20px;
         margin-left: 0;
-        height: 450px;
         float: left;
-        width: 70%; }
+        width: 75%; }
         .wrapper #content #details-product .left .main-image img {
-          height: 100%; }
+          width: 100%; }
       .wrapper #content #details-product .left .wrap-list {
         float: right;
         width: 20%;
@@ -640,8 +640,7 @@ a {
         .wrapper #content #details-product .left .wrap-list ul {
           list-style: none; }
           .wrapper #content #details-product .left .wrap-list ul li {
-            width: 70px;
-            margin-right: 10px; }
+            width: 100%; }
             .wrapper #content #details-product .left .wrap-list ul li img {
               width: 100%; }
             .wrapper #content #details-product .left .wrap-list ul li:hover {
@@ -653,13 +652,13 @@ a {
         font-size: 30px;
         margin: 20px 0; }
       .wrapper #content #details-product .right .name-product {
-        font-size: 20px;
-        margin: 20px 0; }
+        font-size: 18px;
+        margin-top: 20px; }
       .wrapper #content #details-product .right .id-product {
         font-size: 14px;
-        margin-bottom: 10px; }
+        margin: 10px 0; }
       .wrapper #content #details-product .right .price-product {
-        font-size: 25px; }
+        font-size: 20px; }
       .wrapper #content #details-product .right .size-select {
         width: 110px;
         height: 30px;
@@ -676,38 +675,40 @@ a {
           width: 50px;
           height: 30px;
           text-align: center;
-          font-size: 18px;
-          margin-left: -2px;
+          font-size: 13px;
+          margin: 0 2px;
           border: none;
-          border-top: 1px solid black;
-          border-bottom: 1px solid black; }
+          border: 1px solid black; }
         .wrapper #content #details-product .right .quantity button {
           width: 30px;
           height: 30px;
-          font-size: 18px; }
-        .wrapper #content #details-product .right .quantity button.plus {
-          margin-left: -4px;
+          font-size: 14px; }
+        .wrapper #content #details-product .right .quantity .btn-plus {
           margin-right: 20px;
           border: 1px solid black; }
-        .wrapper #content #details-product .right .quantity button.sub {
-          margin-left: 0px;
-          margin-right: 0;
+        .wrapper #content #details-product .right .quantity .btn-sub {
           border: 1px solid black; }
-      .wrapper #content #details-product .right .colors {
+      .wrapper #content #details-product .right ul#list-color {
+        list-style: none;
         margin: 20px 0;
-        width: 200px;
-        height: 50px;
+        width: 260px;
+        height: 35px;
         display: block; }
-        .wrapper #content #details-product .right .colors option.red {
-          background-color: red; }
-        .wrapper #content #details-product .right .colors .green span {
-          background-color: green; }
-        .wrapper #content #details-product .right .colors .blue span {
-          background-color: blue; }
-        .wrapper #content #details-product .right .colors .orange span {
-          background-color: orange; }
-        .wrapper #content #details-product .right .colors .violet span {
-          background-color: violet; }
+        .wrapper #content #details-product .right ul#list-color li {
+          float: left;
+          margin-right: 10px; }
+          .wrapper #content #details-product .right ul#list-color li input[type="radio"] {
+            display: none; }
+          .wrapper #content #details-product .right ul#list-color li .btn-color {
+            padding: 10px 20px;
+            background-color: #000;
+            cursor: pointer; }
+          .wrapper #content #details-product .right ul#list-color li .color1 {
+            background-color: yellow; }
+          .wrapper #content #details-product .right ul#list-color li .color2 {
+            background-color: red; }
+          .wrapper #content #details-product .right ul#list-color li .color3 {
+            background-color: green; }
       .wrapper #content #details-product .right .add-cart {
         margin-right: 20px;
         background-color: #0bf; }
@@ -762,7 +763,8 @@ a {
           .wrapper #footer .menu-box .box-right .contact .send-mail input {
             height: 30px;
             min-width: 70%;
-            border: 1px solid black; }
+            border: 1px solid black;
+            padding-left: 3px; }
           .wrapper #footer .menu-box .box-right .contact .send-mail .send {
             width: 70px;
             height: 30px;
@@ -1406,19 +1408,18 @@ a {
       .wrapper #content #details-product .left .main-image {
         margin: 20px;
         margin-left: 0;
-        height: 450px;
         float: left;
         width: 70%; }
         .wrapper #content #details-product .left .main-image img {
-          height: 100%; }
+          width: 100%; }
       .wrapper #content #details-product .left .wrap-list {
         float: right;
-        width: 20%;
+        width: 15%;
         margin-top: 20px; }
         .wrapper #content #details-product .left .wrap-list ul {
           list-style: none; }
           .wrapper #content #details-product .left .wrap-list ul li {
-            width: 70px;
+            width: 80%;
             margin-right: 10px; }
             .wrapper #content #details-product .left .wrap-list ul li img {
               width: 100%; }
@@ -1431,13 +1432,13 @@ a {
         font-size: 30px;
         margin: 20px 0; }
       .wrapper #content #details-product .right .name-product {
-        font-size: 20px;
-        margin: 20px 0; }
+        font-size: 18px;
+        margin-top: 20px; }
       .wrapper #content #details-product .right .id-product {
         font-size: 14px;
-        margin-bottom: 10px; }
+        margin: 10px 0; }
       .wrapper #content #details-product .right .price-product {
-        font-size: 25px; }
+        font-size: 20px; }
       .wrapper #content #details-product .right .size-select {
         width: 110px;
         height: 30px;
@@ -1455,37 +1456,39 @@ a {
           height: 30px;
           text-align: center;
           font-size: 18px;
-          margin-left: -2px;
+          margin: 0 2px;
           border: none;
-          border-top: 1px solid black;
-          border-bottom: 1px solid black; }
+          border: 1px solid black; }
         .wrapper #content #details-product .right .quantity button {
           width: 30px;
           height: 30px;
           font-size: 18px; }
-        .wrapper #content #details-product .right .quantity button.plus {
-          margin-left: -4px;
+        .wrapper #content #details-product .right .quantity .btn-plus {
           margin-right: 20px;
           border: 1px solid black; }
-        .wrapper #content #details-product .right .quantity button.sub {
-          margin-left: 0px;
-          margin-right: 0;
+        .wrapper #content #details-product .right .quantity .btn-sub {
           border: 1px solid black; }
-      .wrapper #content #details-product .right .colors {
+      .wrapper #content #details-product .right ul#list-color {
+        list-style: none;
         margin: 20px 0;
-        width: 200px;
-        height: 50px;
+        width: 260px;
+        height: 35px;
         display: block; }
-        .wrapper #content #details-product .right .colors option.red {
-          background-color: red; }
-        .wrapper #content #details-product .right .colors .green span {
-          background-color: green; }
-        .wrapper #content #details-product .right .colors .blue span {
-          background-color: blue; }
-        .wrapper #content #details-product .right .colors .orange span {
-          background-color: orange; }
-        .wrapper #content #details-product .right .colors .violet span {
-          background-color: violet; }
+        .wrapper #content #details-product .right ul#list-color li {
+          float: left;
+          margin-right: 10px; }
+          .wrapper #content #details-product .right ul#list-color li input[type="radio"] {
+            display: none; }
+          .wrapper #content #details-product .right ul#list-color li .btn-color {
+            padding: 10px 20px;
+            background-color: #000;
+            cursor: pointer; }
+          .wrapper #content #details-product .right ul#list-color li .color1 {
+            background-color: yellow; }
+          .wrapper #content #details-product .right ul#list-color li .color2 {
+            background-color: red; }
+          .wrapper #content #details-product .right ul#list-color li .color3 {
+            background-color: green; }
       .wrapper #content #details-product .right .add-cart {
         margin-right: 20px;
         background-color: #0bf; }
@@ -1946,11 +1949,10 @@ a {
       .wrapper #content #details-product .left .main-image {
         margin: 20px;
         margin-left: 0;
-        height: 450px;
         float: left;
-        width: 70%; }
+        width: 75%; }
         .wrapper #content #details-product .left .main-image img {
-          height: 100%; }
+          width: 100%; }
       .wrapper #content #details-product .left .wrap-list {
         float: right;
         width: 20%;
@@ -1971,13 +1973,13 @@ a {
         font-size: 30px;
         margin: 20px 0; }
       .wrapper #content #details-product .right .name-product {
-        font-size: 20px;
-        margin: 20px 0; }
+        font-size: 18px;
+        margin-top: 20px; }
       .wrapper #content #details-product .right .id-product {
         font-size: 14px;
-        margin-bottom: 10px; }
+        margin: 10px 0; }
       .wrapper #content #details-product .right .price-product {
-        font-size: 25px; }
+        font-size: 20px; }
       .wrapper #content #details-product .right .size-select {
         width: 110px;
         height: 30px;
@@ -1995,37 +1997,39 @@ a {
           height: 30px;
           text-align: center;
           font-size: 18px;
-          margin-left: -2px;
+          margin: 0 2px;
           border: none;
-          border-top: 1px solid black;
-          border-bottom: 1px solid black; }
+          border: 1px solid black; }
         .wrapper #content #details-product .right .quantity button {
           width: 30px;
           height: 30px;
           font-size: 18px; }
-        .wrapper #content #details-product .right .quantity button.plus {
-          margin-left: -4px;
+        .wrapper #content #details-product .right .quantity .btn-plus {
           margin-right: 20px;
           border: 1px solid black; }
-        .wrapper #content #details-product .right .quantity button.sub {
-          margin-left: 0px;
-          margin-right: 0;
+        .wrapper #content #details-product .right .quantity .btn-sub {
           border: 1px solid black; }
-      .wrapper #content #details-product .right .colors {
+      .wrapper #content #details-product .right ul#list-color {
+        list-style: none;
         margin: 20px 0;
-        width: 200px;
-        height: 50px;
+        width: 260px;
+        height: 35px;
         display: block; }
-        .wrapper #content #details-product .right .colors option.red {
-          background-color: red; }
-        .wrapper #content #details-product .right .colors .green span {
-          background-color: green; }
-        .wrapper #content #details-product .right .colors .blue span {
-          background-color: blue; }
-        .wrapper #content #details-product .right .colors .orange span {
-          background-color: orange; }
-        .wrapper #content #details-product .right .colors .violet span {
-          background-color: violet; }
+        .wrapper #content #details-product .right ul#list-color li {
+          float: left;
+          margin-right: 10px; }
+          .wrapper #content #details-product .right ul#list-color li input[type="radio"] {
+            display: none; }
+          .wrapper #content #details-product .right ul#list-color li .btn-color {
+            padding: 10px 20px;
+            background-color: #000;
+            cursor: pointer; }
+          .wrapper #content #details-product .right ul#list-color li .color1 {
+            background-color: yellow; }
+          .wrapper #content #details-product .right ul#list-color li .color2 {
+            background-color: red; }
+          .wrapper #content #details-product .right ul#list-color li .color3 {
+            background-color: green; }
       .wrapper #content #details-product .right .add-cart {
         margin-right: 20px;
         background-color: #0bf; }
@@ -2765,23 +2769,24 @@ a {
     padding: 20px 30px; }
     .wrapper #content #details-product .left {
       width: 50%;
-      float: left; }
+      float: left;
+      padding-right: 20px; }
       .wrapper #content #details-product .left .main-image {
         margin: 20px;
         margin-left: 0;
-        height: 450px;
         float: left;
-        width: 70%; }
+        width: 80%;
+        overflow: hidden; }
         .wrapper #content #details-product .left .main-image img {
-          height: 100%; }
+          width: 100%; }
       .wrapper #content #details-product .left .wrap-list {
         float: right;
-        width: 20%;
+        width: 15%;
         margin-top: 20px; }
         .wrapper #content #details-product .left .wrap-list ul {
           list-style: none; }
           .wrapper #content #details-product .left .wrap-list ul li {
-            width: 70px;
+            width: 80%;
             margin-right: 10px; }
             .wrapper #content #details-product .left .wrap-list ul li img {
               width: 100%; }
@@ -2830,21 +2835,27 @@ a {
         .wrapper #content #details-product .right .quantity .btn-plus {
           margin-right: 20px;
           border: 1px solid black; }
-      .wrapper #content #details-product .right .colors {
+      .wrapper #content #details-product .right ul#list-color {
+        list-style: none;
         margin: 20px 0;
         width: 260px;
         height: 35px;
         display: block; }
-        .wrapper #content #details-product .right .colors option.red {
-          background-color: red; }
-        .wrapper #content #details-product .right .colors .green span {
-          background-color: green; }
-        .wrapper #content #details-product .right .colors .blue span {
-          background-color: blue; }
-        .wrapper #content #details-product .right .colors .orange span {
-          background-color: orange; }
-        .wrapper #content #details-product .right .colors .violet span {
-          background-color: violet; }
+        .wrapper #content #details-product .right ul#list-color li {
+          float: left;
+          margin-right: 10px; }
+          .wrapper #content #details-product .right ul#list-color li input[type="radio"] {
+            display: none; }
+          .wrapper #content #details-product .right ul#list-color li .btn-color {
+            padding: 10px 20px;
+            background-color: #000;
+            cursor: pointer; }
+          .wrapper #content #details-product .right ul#list-color li .color1 {
+            background-color: yellow; }
+          .wrapper #content #details-product .right ul#list-color li .color2 {
+            background-color: red; }
+          .wrapper #content #details-product .right ul#list-color li .color3 {
+            background-color: green; }
       .wrapper #content #details-product .right .add-cart {
         margin-right: 20px;
         background-color: #2DA9FF; }
