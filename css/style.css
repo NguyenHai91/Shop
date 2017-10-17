@@ -6,8 +6,24 @@
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: SagonaFF; }
+  font-family: SagonaFF,sans-serif; }
 
+@font-face {
+  font-family: JosefinSlab Bold;
+  src: url("../fonts/Josefin_Slab/JosefinSlab-Bold.ttf");
+  font-weight: bold; }
+@font-face {
+  font-family: JosefinSlab Light;
+  src: url("../fonts/Josefin_Slab/JosefinSlab-Light.ttf");
+  font-weight: lighter; }
+@font-face {
+  font-family: JosefinSlab Regular;
+  src: url("../fonts/Josefin_Slab/JosefinSlab-Regular.ttf");
+  font-weight: normal; }
+@font-face {
+  font-family: AbrilFatface;
+  src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf");
+  font-weight: normal; }
 @font-face {
   font-family: SaturdayScript;
   src: url("../fonts/SaturdayScript/OTF/SaturdayScript.otf");
@@ -568,6 +584,42 @@ a {
               background-color: #f70; }
             .wrapper #content #checkout .box-content .summary-order ul li:last-child {
               border: none; }
+  .wrapper #content #success {
+    width: 80%;
+    height: 500px;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    background-color: #fff;
+    text-align: center;
+    background-color: #FFF6D0;
+    z-index: 200;
+    display: none; }
+    .wrapper #content #success .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      color: #000;
+      background-color: #fff;
+      cursor: pointer; }
+    .wrapper #content #success .cover-logo-success {
+      width: 100px;
+      height: 100px;
+      margin-top: 100px;
+      margin-left: 40%; }
+      .wrapper #content #success .cover-logo-success img {
+        width: 100%;
+        height: 100%; }
+    .wrapper #content #success .success {
+      margin: 20px 0; }
+    .wrapper #content #success .thank-you {
+      font-size: 30px;
+      color: #FF0000; }
   .wrapper #content #details-product {
     padding: 20px 5px; }
     .wrapper #content #details-product .left {
@@ -752,7 +804,7 @@ a {
                 background-color: #f97;
                 border: none; }
     .wrapper #footer .copyright {
-      height: 40px;
+      height: 30px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
@@ -1310,6 +1362,42 @@ a {
               background-color: #f70; }
             .wrapper #content #checkout .box-content .summary-order ul li:last-child {
               border: none; }
+  .wrapper #content #success {
+    width: 80%;
+    height: 500px;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    background-color: #fff;
+    text-align: center;
+    background-color: #FFF6D0;
+    z-index: 200;
+    display: none; }
+    .wrapper #content #success .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      color: #000;
+      background-color: #fff;
+      cursor: pointer; }
+    .wrapper #content #success .cover-logo-success {
+      width: 200px;
+      height: 200px;
+      margin-top: 100px;
+      margin-left: 40%; }
+      .wrapper #content #success .cover-logo-success img {
+        width: 100%;
+        height: 100%; }
+    .wrapper #content #success .success {
+      margin: 20px 0; }
+    .wrapper #content #success .thank-you {
+      font-size: 30px;
+      color: #FF0000; }
   .wrapper #content #details-product {
     padding: 20px 30px; }
     .wrapper #content #details-product .left {
@@ -1491,7 +1579,7 @@ a {
                 background-color: #f97;
                 border: none; }
     .wrapper #footer .copyright {
-      height: 40px;
+      height: 30px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
@@ -2215,6 +2303,42 @@ a {
               background-color: #f70; }
             .wrapper #content #checkout .box-content .summary-order ul li:last-child {
               border: none; }
+  .wrapper #content #success {
+    width: 80%;
+    height: 500px;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    background-color: #fff;
+    text-align: center;
+    background-color: #FFF6D0;
+    z-index: 200;
+    display: none; }
+    .wrapper #content #success .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      color: #000;
+      background-color: #fff;
+      cursor: pointer; }
+    .wrapper #content #success .cover-logo-success {
+      width: 200px;
+      height: 200px;
+      margin-top: 100px;
+      margin-left: 40%; }
+      .wrapper #content #success .cover-logo-success img {
+        width: 100%;
+        height: 100%; }
+    .wrapper #content #success .success {
+      margin: 20px 0; }
+    .wrapper #content #success .thank-you {
+      font-size: 30px;
+      color: #FF0000; }
   .wrapper #footer {
     border-top: 2px solid black;
     margin-top: 20px; }
@@ -2288,7 +2412,7 @@ a {
                 background-color: #f97;
                 border: none; }
     .wrapper #footer .copyright {
-      height: 40px;
+      height: 30px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
@@ -2372,7 +2496,8 @@ a {
         font-size: 35px;
         color: red; }
     .wrapper #header #navbar .navbar-full .menu {
-      margin-top: 25px; }
+      margin-top: 25px;
+      font-family: SagonaFF; }
       .wrapper #header #navbar .navbar-full .menu ul {
         list-style: none; }
         .wrapper #header #navbar .navbar-full .menu ul li {
@@ -2692,14 +2817,14 @@ a {
           width: 60px;
           height: 30px;
           text-align: center;
-          font-size: 18px;
-          margin: 0 2px;
+          font-size: 13px;
+          margin: 0 1px;
           border: none;
           border: 1px solid black; }
         .wrapper #content #details-product .right .quantity button {
           width: 30px;
           height: 30px;
-          font-size: 18px; }
+          font-size: 13px; }
         .wrapper #content #details-product .right .quantity .btn-sub {
           border: 1px solid black; }
         .wrapper #content #details-product .right .quantity .btn-plus {
@@ -2996,6 +3121,42 @@ a {
               background-color: #f70; }
             .wrapper #content #checkout .box-content .summary-order ul li:last-child {
               border: none; }
+  .wrapper #content #success {
+    width: 80%;
+    height: 500px;
+    position: fixed;
+    top: 20px;
+    left: 10%;
+    background-color: #fff;
+    text-align: center;
+    background-color: #FFF6D0;
+    z-index: 200;
+    display: none; }
+    .wrapper #content #success .close {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      border: none;
+      border-radius: 15px;
+      font-size: 20px;
+      color: #000;
+      background-color: #fff;
+      cursor: pointer; }
+    .wrapper #content #success .cover-logo-success {
+      width: 200px;
+      height: 200px;
+      margin-top: 100px;
+      margin-left: 40%; }
+      .wrapper #content #success .cover-logo-success img {
+        width: 100%;
+        height: 100%; }
+    .wrapper #content #success .success {
+      margin: 20px 0; }
+    .wrapper #content #success .thank-you {
+      font-size: 30px;
+      color: #FF0000; }
   .wrapper #footer {
     border-top: 2px solid black;
     margin-top: 20px; }
@@ -3072,7 +3233,7 @@ a {
                 background-color: #f97;
                 border: none; }
     .wrapper #footer .copyright {
-      height: 40px;
+      height: 30px;
       text-align: center;
       padding-top: 10px;
       background-color: black; }
