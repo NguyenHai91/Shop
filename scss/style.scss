@@ -137,6 +137,9 @@ a{
 				padding: 5px;
 				text-align: center;
 				margin-top: -5px;
+				a{
+					text-decoration: none;
+				}
 				p{
 					font-family: SagonaFF;
 					font-size: 25px;
@@ -1140,6 +1143,9 @@ a{
 				padding: 5px;
 				text-align: center;
 				margin-top: -5px;
+				a{
+					text-decoration: none;
+				}
 				p{
 					font-family: SagonaFF;
 					font-size: 25px;
@@ -2129,6 +2135,9 @@ a{
 				.navbar-full {
 					.logo-shop{
 						position: relative;
+						a{
+							text-decoration: none;
+						}
 						p{
 							font-family: SagonaFF;
 							font-size: 20px;
@@ -3237,6 +3246,9 @@ a{
 				position: relative;
 				.navbar-full {
 					.logo-shop{
+						a{
+							text-decoration: none;
+						}
 						p{
 							font-family: SagonaFF;
 							font-size: 25px;

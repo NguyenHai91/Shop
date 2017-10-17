@@ -142,6 +142,8 @@ a {
       padding: 5px;
       text-align: center;
       margin-top: -5px; }
+      .wrapper #navbar .logo-shop a {
+        text-decoration: none; }
       .wrapper #navbar .logo-shop p {
         font-family: SagonaFF;
         font-size: 25px; }
@@ -907,6 +909,8 @@ a {
       padding: 5px;
       text-align: center;
       margin-top: -5px; }
+      .wrapper #navbar .logo-shop a {
+        text-decoration: none; }
       .wrapper #navbar .logo-shop p {
         font-family: SagonaFF;
         font-size: 25px; }
@@ -1659,6 +1663,8 @@ a {
     position: relative; }
     .wrapper #header #navbar .navbar-full .logo-shop {
       position: relative; }
+      .wrapper #header #navbar .navbar-full .logo-shop a {
+        text-decoration: none; }
       .wrapper #header #navbar .navbar-full .logo-shop p {
         font-family: SagonaFF;
         font-size: 20px;
@@ -2492,6 +2498,8 @@ a {
     height: 60px;
     border-bottom: 1px solid #000000;
     position: relative; }
+    .wrapper #header #navbar .navbar-full .logo-shop a {
+      text-decoration: none; }
     .wrapper #header #navbar .navbar-full .logo-shop p {
       font-family: SagonaFF;
       font-size: 25px; }
