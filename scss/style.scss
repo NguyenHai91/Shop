@@ -377,16 +377,19 @@ a{
 										z-index: 100;
 									}
 								}
-								.name{
-									font-size: 14px;
-									margin: 5px 10px;
-									display:block;
+								.cover-details {
+									text-align: center;
+									.name{
+										font-size: 14px;
+										margin: 5px 10px;
+										display:block;
 
-								}
-								.price{
-									font-size: 16px;
-									margin-left: 10px;
+									}
+									.price{
+										font-size: 16px;
+										margin-left: 10px;
 
+									}
 								}
 							}
 						}
@@ -872,7 +875,7 @@ a{
 							border: 1px solid black;
 						}
 					}
-					ul#list-color{
+					#list-color{
 						list-style: none;
 						margin: 20px 0;
 						width: 260px;
@@ -880,14 +883,15 @@ a{
 						display: block;
 						li{
 							float: left;
-							margin-right: 10px;
+							margin-right: 5px;
 							input[type="radio"] {
 								display: none;
 							}
 							.btn-color {
-								padding: 10px 20px;
+								padding: 10px ;
 								background-color: #000;
 								cursor: pointer;
+								border-radius: 3px;
 							}
 							.color1 {
 								background-color: yellow;
@@ -935,16 +939,18 @@ a{
 		#footer {
 			border-top: 2px solid black;
 			margin-top: 20px;
+
 			.menu-box {
 				padding: 10px 5px;
 				.box-left {
 					width: 100%;
+
 					.box{
 						width: 50%;
 						padding: 5px;
 						float: left;
 						h4{
-							font-size: 14px;
+							font-size: 18px;
 						}
 						ul{
 							list-style: none;
@@ -953,44 +959,95 @@ a{
 								a{
 									color: black;
 									text-decoration: none;
-									font-size: 12px;
+									font-size: 13px;
 								}
 							}
-						}
-						&:after {
-							content: "";
-							clear: both;
-							display: block;
 						}
 					}
 				}
 				.box-right {
 					width: 100%;
-
+					padding-left: 5px;
 					.contact {
-						width: 100%;
-						margin-left: 5px;
-						.title{
-							font-size: 14px;
+						.title {
+							padding-top: 10px;
 						}
 						.status {
 							margin: 5px 0;
+							font-size: 13px;
 						}
 						.send-mail {
 							input {
 								height: 30px;
 								min-width: 70%;
 								border: 1px solid black;
-								padding-left: 3px;
+								padding-left: 5px;
+								font-size: 14px;
+								float: left;
 							}
 							.send {
 								width: 70px;
 								height: 30px;
-
 								border: 1px solid black;
+								border-radius: 0;
+								margin-top: 0px;
+								margin-left: 2px;
+								color: white;
+								background-color: black;
 								&:hover {
-									color: white;
-									background-color: black;
+									cursor: pointer;
+								}
+							}
+						}
+
+						.social-link {
+							margin-top: 20px;
+
+							ul{
+								margin-left: 0;
+								list-style: none;
+								li{
+									float: left;
+									margin-right: 10px;
+									a{
+										i{
+											width: 40px;
+											height: 40px;
+											padding: 11px;
+											font-size: 16px;
+											border-radius: 20px;
+
+										}
+										i.facebook{
+											padding: 12px;
+											color: white;
+											background-color: #3a5b93;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.twitter{
+											color: white;
+											background-color: #00a3ec;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.google{
+											color: #f99;
+											background-color: #00a3ec;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.pinterest{
+											color: white;
+											background-color: #f97;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -1009,7 +1066,7 @@ a{
 									i{
 										width: 30px;
 										height: 30px;
-										border: 1px solid black;
+										border: none;
 										padding: 6px;
 										font-size: 18px;
 										border-radius: 15px;
@@ -1020,28 +1077,24 @@ a{
 										&:hover {
 											color: white;
 											background-color: #3a5b93;
-											border: none;
 										}
 									}
 									i.twitter{
 										&:hover {
 											color: white;
 											background-color: #00a3ec;
-											border: none;
 										}
 									}
 									i.google{
 										&:hover {
 											color: #f99;
 											background-color: #00a3ec;
-											border: none;
 										}
 									}
 									i.pinterest{
 										&:hover {
 											color: white;
 											background-color: #f97;
-											border: none;
 										}
 									}
 								}
@@ -1056,7 +1109,7 @@ a{
 				padding-top: 10px;
 				background-color: black;
 				span{
-					font-size: 14px;
+					font-size: 16px;
 					color: white;
 				}
 			}
@@ -1237,7 +1290,7 @@ a{
 					}
 					
 					.btn-shop{
-						width: 200px;
+						width: 250px;
 						height: 50px;
 						position: absolute;
 						left: 50%;
@@ -1391,16 +1444,19 @@ a{
 										z-index: 100;
 									}
 								}
-								.name{
-									font-size: 18px;
-									margin: 5px 10px;
-									display:block;
+								.cover-details {
+									text-align: center;
+									.name{
+										font-size: 18px;
+										margin: 5px 10px;
+										display:block;
 
-								}
-								.price{
-									font-size: 16px;
-									margin-left: 10px;
+									}
+									.price{
+										font-size: 16px;
+										margin-left: 10px;
 
+									}
 								}
 							}
 						}
@@ -1985,28 +2041,85 @@ a{
 					width: 100%;
 					padding-left: 5px;
 					.contact {
-						width: 100%;
-						.title{
-							font-size: 18px;
+						.title {
+							padding-top: 10px;
 						}
 						.status {
-							margin: 5px 5px;
+							margin: 5px 0;
+							font-size: 13px;
 						}
 						.send-mail {
 							input {
 								height: 30px;
 								min-width: 70%;
 								border: 1px solid black;
-								margin: 0 5px;
+								padding-left: 5px;
+								font-size: 14px;
+								float: left;
 							}
 							.send {
 								width: 70px;
 								height: 30px;
-
 								border: 1px solid black;
+								border-radius: 0;
+								margin-top: 0px;
+								margin-left: 2px;
+								color: white;
+								background-color: black;
 								&:hover {
-									color: white;
-									background-color: black;
+									cursor: pointer;
+								}
+							}
+						}
+
+						.social-link {
+							margin-top: 20px;
+
+							ul{
+								margin-left: 0;
+								list-style: none;
+								li{
+									float: left;
+									margin-right: 10px;
+									a{
+										i{
+											width: 40px;
+											height: 40px;
+											padding: 11px;
+											font-size: 16px;
+											border-radius: 20px;
+
+										}
+										i.facebook{
+											padding: 12px;
+											color: white;
+											background-color: #3a5b93;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.twitter{
+											color: white;
+											background-color: #00a3ec;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.google{
+											color: #f99;
+											background-color: #00a3ec;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+										i.pinterest{
+											color: white;
+											background-color: #f97;
+											&:hover {
+												cursor: pointer;
+											}
+										}
+									}
 								}
 							}
 						}
@@ -2025,7 +2138,7 @@ a{
 									i{
 										width: 30px;
 										height: 30px;
-										border: 1px solid black;
+										border: none;
 										padding: 6px;
 										font-size: 18px;
 										border-radius: 15px;
@@ -2036,28 +2149,24 @@ a{
 										&:hover {
 											color: white;
 											background-color: #3a5b93;
-											border: none;
 										}
 									}
 									i.twitter{
 										&:hover {
 											color: white;
 											background-color: #00a3ec;
-											border: none;
 										}
 									}
 									i.google{
 										&:hover {
 											color: #f99;
 											background-color: #00a3ec;
-											border: none;
 										}
 									}
 									i.pinterest{
 										&:hover {
 											color: white;
 											background-color: #f97;
-											border: none;
 										}
 									}
 								}
@@ -2076,7 +2185,6 @@ a{
 					color: white;
 				}
 			}
-
 		}
 
 	}	
@@ -2129,47 +2237,44 @@ a{
 	.wrapper{
 		#header{
 			#navbar {
-				height: 60px;
+				height: 50px;
 				border-bottom: 1px solid #000000;
 				position: relative;
 				.navbar-full {
 					.logo-shop{
-						position: relative;
 						a{
 							text-decoration: none;
 						}
 						p{
 							font-family: SagonaFF;
 							font-size: 20px;
-							margin-top: 15px;
 							span{
-								position: absolute;
-								left: 100px;
-								margin-top: -15px;
 								font-family: SaturdayScript;
-								font-size: 35px;
+								font-size: 30px;
 								color: red;
 							}
 						}
 					}
 					.menu{
-						margin-top: 25px;
-						
+						margin-top: 15px;
+						font-family: SagonaFF;
 						ul {
 							list-style: none;
 							li {
+								
+								height: 34px;
 								float: left;
 								margin-left: 20px;
-								height: 35px;
 								a{
 									font-size: 20px;
 									text-decoration: none;
 									color: black;
 
 								}
-								a.active {
-									text-decoration: underline;
+								.active {
+									border-bottom: 1px solid #000000;
 								}
+								
 								.menu-child {
 									position: absolute;
 									left: 0;
@@ -2188,20 +2293,9 @@ a{
 										li{
 											width: 30%;
 											float: left;
-											font-size: 20px;
-											ul{
-												width: 90%;
-												margin-left: -10px;
-												li{
-													width: 100%;
-													display: block;
-													a{
-														font-size: 16px;
-														&:hover {
-															text-decoration: underline;
-														}
-													}
-												}
+											
+											a{
+												font-size: 16px;
 											}
 										}
 									}
@@ -2223,15 +2317,15 @@ a{
 						}
 					}
 					.search-box{
-						margin-top: 23px;
-						
+						margin-top: 10px;
+						border-bottom: 1px solid black;
 						i {
-							font-size: 20px;
-							margin-left: 10px;
-							margin-right: 5px;
-							margin-top: 0px;
-							text-align: right;
+							font-size: 18px;
+
 							
+							margin-top: 0px;
+							text-align: left;
+
 						}
 						input{
 
@@ -2239,7 +2333,7 @@ a{
 							min-width: 80%;
 							border: none;
 							outline: 0;
-							border-bottom: 1px solid black;
+							
 
 						}
 					}
@@ -2247,19 +2341,20 @@ a{
 						margin-top: 8px;
 						.account{
 							float: right;
-							margin-top: 18px;
+							margin-top: 10px;
+
 							padding: 0 3px;
-							font-size: 20px;
+							font-size: 16px;
 							text-decoration: none;
 							border: 1px solid black;
 							border-radius: 3px;
 							background-color: #fff;
+							cursor: pointer;
 						}
-
 						.bag {
 
-							font-size: 40px;
-							margin-left: 30px;
+							font-size: 28px;
+							
 							position: relative;
 							z-index: 100;
 							.indicator {
@@ -2269,27 +2364,23 @@ a{
 								background-color: #F50014;
 								color: #fff;
 								border-radius: 15px;
-								top: -8px;
-								right: -12px;
+								top: -10px;
+								right: -14px;
 								font-size: 14px;
-								padding-top: 8px;
+								padding: 8px;
 								text-align: center;
 								z-index: 105;
 							}
 						}
-
 					}
 				}
 			}
 		}
 		#content {
-			
-
 			#head-slide {
 				position: relative;
-				overflow-x: hidden;
+				//overflow: hidden;
 				.slide-box {
-					
 					margin-top: -1px;
 					width: 100%;
 					.btn-shop{
@@ -2319,7 +2410,7 @@ a{
 
 					}
 					ul {
-						width: 5000px;
+						width: 50000px;
 						white-space: nowrap;
 						li{
 							width: 980px;
@@ -2358,50 +2449,54 @@ a{
 					}
 				}
 			}
+			#search {
+				.menu-vertical {
+					margin-top: 30px;
+					position: relative;
+					border-top: 1px solid black;
+					height: 100%;
+					padding: 10px;
+					padding-top: 30px;
+					.cover-box {
+						width: 20%;
+						float: left;
+						padding: 10px;
+					}
+					label {
+						display: block;
+						margin-top: 20px;
+					}
+					.select {
+						width: 100%;
+						height: 35px;
+						border: 1px solid black;
+						font-size: 14px;
+						border-radius: none;
+
+					}
+					
+					.btn-search {
+						width: 100%;
+						height: 35px;
+						font-size: 14px;
+						border: 1px solid black;
+						margin-top: 38px;
+						background-color: #000;
+						color: #fff;
+						&:hover {
+							cursor: pointer;
+							
+						}
+					}
+
+				}
+			}
 			#best-sellers{
 				.container-full{
 					padding: 0 20px;
 					.col-lg-2 {
 						height: 100%;
 
-					}
-					.menu-vertical {
-						margin-top: 30px;
-						position: relative;
-						border: 1px solid black;
-						height: 100%;
-						padding: 10px;
-						padding-top: 30px;
-						
-						label {
-							display: block;
-							margin-top: 20px;
-						}
-						.select {
-							width: 100%;
-							height: 35px;
-							border: 1px solid black;
-							font-size: 14px;
-
-						}
-						.input-price {
-							width: 100%;
-							height: 35px;
-							font-size: 14px;
-							border:  1px solid black;
-						}
-						.btn-search {
-							width: 50%;
-							height: 35px;
-							font-size: 14px;
-							border: 1px solid black;
-							margin-top: 20px;
-							&:hover {
-								color: #fff;
-								background-color: #000;
-							}
-						}
-						
 					}
 					.features{
 						.title-box {
@@ -2521,17 +2616,21 @@ a{
 									}
 									
 								}
-								.name{
-									font-size: 14px;
-									margin: 5px 10px;
-									display:block;
+								.cover-details {
+									text-align: center;
+									.name{
+										font-size: 14px;
+										margin: 5px 10px;
+										display:block;
 
-								}
-								.price{
-									font-size: 16px;
-									margin-left: 10px;
+									}
+									.price{
+										font-size: 16px;
+										margin-left: 10px;
 
+									}	
 								}
+								
 							}
 						}
 					}
@@ -2539,6 +2638,7 @@ a{
 			}
 			#details-product {
 				padding: 20px 30px;
+
 				.left {
 					width: 50%;
 					float: left;
@@ -3075,7 +3175,7 @@ a{
 			border-top: 2px solid black;
 			margin-top: 20px;
 			.menu-box {
-				padding: 20px 20px;
+				padding: 20px 30px;
 				.box-left {
 					width: 65%;
 					float: left;
@@ -3085,13 +3185,12 @@ a{
 						float: left;
 						ul{
 							list-style: none;
-							margin-left: 0px;
 							li{
 								margin: 5px 0;
 								a{
 									color: black;
 									text-decoration: none;
-									font-size: 13px;
+									font-size: 12px;
 								}
 							}
 						}
@@ -3102,30 +3201,38 @@ a{
 					float: right;
 					.contact {
 						.title {
-							margin-top: 10px;
+							padding-top: 10px;
 						}
 						.status {
-							margin: 10px 0;
+							margin: 5px 0;
+							font-size: 13px;
 						}
 						.send-mail {
 							input {
 								height: 30px;
 								min-width: 70%;
 								border: 1px solid black;
+								padding-left: 5px;
+								font-size: 14px;
+								float: left;
 							}
 							.send {
 								width: 70px;
 								height: 30px;
 								border: 1px solid black;
+								border-radius: 0;
+								margin-top: 0px;
+								margin-left: 2px;
+								color: white;
+								background-color: black;
 								&:hover {
-									color: white;
-									background-color: black;
+									cursor: pointer;
 								}
 							}
 						}
 
 						.social-link {
-							margin-top: 10px;
+							margin-top: 20px;
 
 							ul{
 								margin-left: 0;
@@ -3135,41 +3242,40 @@ a{
 									margin-right: 10px;
 									a{
 										i{
-											width: 30px;
-											height: 30px;
-											border: 1px solid black;
-											padding: 6px;
-											font-size: 18px;
-											border-radius: 15px;
+											width: 40px;
+											height: 40px;
+											padding: 11px;
+											font-size: 16px;
+											border-radius: 20px;
 
 										}
 										i.facebook{
-											padding: 8px;
+											padding: 12px;
+											color: white;
+											background-color: #3a5b93;
 											&:hover {
-												color: white;
-												background-color: #3a5b93;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.twitter{
+											color: white;
+											background-color: #00a3ec;
 											&:hover {
-												color: white;
-												background-color: #00a3ec;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.google{
+											color: #f99;
+											background-color: #00a3ec;
 											&:hover {
-												color: #f99;
-												background-color: #00a3ec;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.pinterest{
+											color: white;
+											background-color: #f97;
 											&:hover {
-												color: white;
-												background-color: #f97;
-												border: none;
+												cursor: pointer;
 											}
 										}
 									}
@@ -3241,7 +3347,7 @@ a{
 	.wrapper{
 		#header{
 			#navbar {
-				height: 60px;
+				height: 50px;
 				border-bottom: 1px solid #000000;
 				position: relative;
 				.navbar-full {
@@ -3251,16 +3357,16 @@ a{
 						}
 						p{
 							font-family: SagonaFF;
-							font-size: 25px;
+							font-size: 20px;
 							span{
 								font-family: SaturdayScript;
-								font-size: 35px;
+								font-size: 30px;
 								color: red;
 							}
 						}
 					}
 					.menu{
-						margin-top: 25px;
+						margin-top: 15px;
 						font-family: SagonaFF;
 						ul {
 							list-style: none;
@@ -3270,7 +3376,7 @@ a{
 								float: left;
 								margin-left: 20px;
 								a{
-									font-size: 23px;
+									font-size: 20px;
 									text-decoration: none;
 									color: black;
 
@@ -3282,7 +3388,7 @@ a{
 								.menu-child {
 									position: absolute;
 									left: 0;
-									top: 60px;
+									top: 50px;
 									width: 100%;
 									height: 200px;
 									overflow: hidden;
@@ -3294,6 +3400,7 @@ a{
 									ul{
 										width: 70%;
 										float: left;
+										padding: 10px;
 										li{
 											width: 30%;
 											float: left;
@@ -3321,13 +3428,14 @@ a{
 						}
 					}
 					.search-box{
-						margin-top: 23px;
+						margin-top: 10px;
+						border-bottom: 1px solid black;
 						i {
-							font-size: 20px;
-							margin-left: 10px;
+							font-size: 18px;
+
 							margin-right: 5px;
 							margin-top: 0px;
-							text-align: right;
+							text-align: left;
 
 						}
 						input{
@@ -3336,7 +3444,7 @@ a{
 							min-width: 80%;
 							border: none;
 							outline: 0;
-							border-bottom: 1px solid black;
+							
 
 						}
 					}
@@ -3344,9 +3452,9 @@ a{
 						margin-top: 8px;
 						.account{
 							float: right;
-							margin-top: 18px;
+							margin-top: 10px;
 							padding: 0 3px;
-							font-size: 20px;
+							font-size: 16px;
 							text-decoration: none;
 							border: 1px solid black;
 							border-radius: 3px;
@@ -3355,8 +3463,8 @@ a{
 						}
 						.bag {
 
-							font-size: 40px;
-							margin-left: 30px;
+							font-size: 28px;
+							margin-left: 28px;
 							position: relative;
 							z-index: 100;
 							.indicator {
@@ -3366,8 +3474,8 @@ a{
 								background-color: #F50014;
 								color: #fff;
 								border-radius: 15px;
-								top: -8px;
-								right: -12px;
+								top: -15px;
+								right: -16px;
 								font-size: 14px;
 								padding: 8px;
 								text-align: center;
@@ -3381,10 +3489,10 @@ a{
 		#content {
 			#head-slide {
 				position: relative;
-
+				height: 600px;
 				.slide-box {
 					overflow: hidden;
-					margin-top: -1px;
+					margin-top: -2px;
 					width: 100%;
 					.btn-shop{
 						position: absolute;
@@ -3413,7 +3521,7 @@ a{
 
 					}
 					ul {
-						width: 5000px;
+						width: 50000px;
 						white-space: nowrap;
 						li{
 							width: 1280px;
@@ -3438,66 +3546,72 @@ a{
 				z-index: 100;
 				.cover-brands{
 					.brand-box {
-						width: 16.6667%;
+						width: 15%;
 						height: 100px;
 						float: left;
 						padding: 0px 50px;
-						
+						margin: 5px;
+						border: 1px solid #9F9F9F;
 						.cover-img{
 							img{
 								width: 100%;
 							}
 						}
 						&:hover {
-							border: 1px solid black;
+							cursor: pointer;
 						}
 					}
 				}
 			}
+			#search {
+				.menu-vertical {
+					margin-top: 30px;
+					position: relative;
+					border-top: 1px solid black;
+					height: 100%;
+					padding: 10px;
+					padding-top: 30px;
+					.cover-box {
+						width: 20%;
+						float: left;
+						padding: 10px;
+					}
+					label {
+						display: block;
+						margin-top: 20px;
+					}
+					.select {
+						width: 100%;
+						height: 35px;
+						border: 1px solid black;
+						font-size: 14px;
+						border-radius: none;
+
+					}
+					
+					.btn-search {
+						width: 100%;
+						height: 35px;
+						font-size: 14px;
+						border: 1px solid black;
+						margin-top: 38px;
+						background-color: #000;
+						color: #fff;
+						&:hover {
+							cursor: pointer;
+							
+						}
+					}
+
+				}
+			}
 			#best-sellers{
 				.container-full{
-					padding: 0 30px;
+					//padding: 0 30px;
 					.col-lg-2 {
 						height: 100%;
 					}
-					.menu-vertical {
-						margin-top: 30px;
-						position: relative;
-						border: 1px solid black;
-						height: 100%;
-						padding: 10px;
-						padding-top: 30px;
-						
-						label {
-							display: block;
-							margin-top: 20px;
-						}
-						.select {
-							width: 100%;
-							height: 35px;
-							border: 1px solid black;
-							font-size: 14px;
-
-						}
-						.input-price {
-							width: 100%;
-							height: 35px;
-							font-size: 14px;
-							border:  1px solid black;
-						}
-						.btn-search {
-							width: 50%;
-							height: 35px;
-							font-size: 14px;
-							border: 1px solid black;
-							margin-top: 20px;
-							&:hover {
-								color: #fff;
-								background-color: #000;
-							}
-						}
-						
-					}
+					
 					.features{
 						.products {
 							margin-top: 30px;
@@ -3506,6 +3620,7 @@ a{
 							padding-top: 20px;
 							.product{
 								width: 25%;
+								height: 500px;
 								float: left;
 								padding: 10px;
 
@@ -3519,36 +3634,6 @@ a{
 									img{
 										width: 100%;
 									}
-									.cover-btns {
-										width: 100%;
-										position: absolute;
-										bottom: 5px;
-										left: 0;
-										display: none;
-										.btn-add-cart{
-											float: left;
-											width: 50%;
-											height: 35px;
-											color: #fff;
-											background-color: rgba(45, 169, 255, 1);
-											border: none;
-											cursor: pointer;
-										}
-										.btn-buy-now {
-											float: right;
-											width: 50%;
-											height: 35px;
-											color: #fff;
-											background-color: rgba(255, 142, 0, 1);
-											border: none;
-											cursor: pointer;
-										}
-
-									}
-									&:hover .cover-btns{
-										display: block;
-									}
-									
 								}
 
 								.name{
@@ -3568,13 +3653,14 @@ a{
 				}
 			}
 			#hot-products {
+				height: 300px;
 				position: relative;
 				margin-top: 30px;
 				border-top: 1px solid black;
 				padding: 20px 40px;
 				.cover-box {
 					width: 100%;
-					overflow-x: hidden;
+					overflow: hidden;
 					.size-btn {
 						position: absolute;
 						font-size: 100px;
@@ -3593,37 +3679,48 @@ a{
 
 					}
 					ul{
-						width: 5000px;
+						width: 50000px;
+						height: 100%;
 						list-style: none;
 						white-space: nowrap;
 						li{
 							float: left;
 							width: 200px;
+							height: 100%;
 							margin-right: 20px;
 							.product{
 								width: 100%;
+								height: 300px;
 								float: left;
 								text-align: center;
 								.cover-img{
 									height: 80%;
+									display: block;
 									&:hover {
 										opacity: 0.7;
 									}
 									img{
 										width: 100%;
+										height: 100%;
 										z-index: 100;
+										object-fit: cover;
 									}
 								}
-								.name{
-									font-size: 14px;
-									margin: 5px 10px;
-									display:block;
+								.cover-details {
+									height: 20%;
+									
+									.name{
+										font-size: 14px;
+										margin: 5px 10px;
+										display:block;
 
-								}
-								.price{
-									font-size: 16px;
-									margin-left: 10px;
+									}
+									.price{
+										font-size: 16px;
+										//margin-left: 10px;
+										display: block;
 
+									}
 								}
 								
 							}
@@ -3675,18 +3772,18 @@ a{
 					}
 					.name-product {
 						font-size: 20px;
-						margin: 20px 0;
+						margin: 10px 0;
 					}
 					.id-product {
 						font-size: 14px;
 						margin-bottom: 10px;
 					}
 					.price-product {
-						font-size: 25px;
+						font-size: 20px;
 						
 					}
 					.size-select {
-						width: 110px;
+						width: 150px;
 						height: 30px;
 						margin: 20px 0;
 						border: 1px solid #000;
@@ -3701,7 +3798,7 @@ a{
 						margin: 20px 0;
 						float: left;
 						input {
-							width: 60px;
+							width: 82px;
 							height: 30px;
 							text-align: center;
 							font-size: 13px;
@@ -3726,7 +3823,7 @@ a{
 							border: 1px solid black;
 						}
 					}
-					ul#list-color{
+					#list-color{
 						list-style: none;
 						margin: 20px 0;
 						width: 260px;
@@ -3739,9 +3836,10 @@ a{
 								display: none;
 							}
 							.btn-color {
-								padding: 10px 20px;
+								padding: 10px 18px;
 								background-color: #000;
 								cursor: pointer;
+								border-radius: 15px;
 							}
 							.color1 {
 								background-color: yellow;
@@ -3758,9 +3856,11 @@ a{
 					.add-cart {
 						margin-right: 20px;
 						background-color: #2DA9FF;
+						border-radius: 0;
 					}
 					.checkout {
 						background-color: #FF7F00;
+						border-radius: 0;
 					}
 					button{
 						width: 150px;
@@ -3945,7 +4045,6 @@ a{
 					.row {
 						height: 80px;
 					}
-					.details-product,
 					.quantity,
 					.price,
 					.total,
@@ -3953,6 +4052,9 @@ a{
 						height: 100%;
 						padding-top: 30px;
 						text-align: center;
+					}
+					.details-product {
+						padding: 7px;
 					}
 					.quantity {
 						height: 100%;
@@ -3988,6 +4090,12 @@ a{
 									a {
 										font-size: 16px;
 										text-decoration: none;
+										&:hover {
+											text-decoration: underline;
+										}
+									}
+									p {
+										font-size: 13px;
 									}
 								}
 								.btn-sub {
@@ -4123,7 +4231,6 @@ a{
 				}
 			}
 			#success {
-
 				width: 80%;
 				height: 500px;
 				position: fixed;
@@ -4186,7 +4293,7 @@ a{
 								a{
 									color: black;
 									text-decoration: none;
-									font-size: 13px;
+									font-size: 12px;
 								}
 							}
 						}
@@ -4210,15 +4317,19 @@ a{
 								border: 1px solid black;
 								padding-left: 5px;
 								font-size: 14px;
+								float: left;
 							}
 							.send {
 								width: 70px;
 								height: 30px;
 								border: 1px solid black;
-								margin-top: -1px;
+								border-radius: 0;
+								margin-top: 0px;
+								margin-left: 2px;
+								color: white;
+								background-color: black;
 								&:hover {
-									color: white;
-									background-color: black;
+									cursor: pointer;
 								}
 							}
 						}
@@ -4234,41 +4345,40 @@ a{
 									margin-right: 10px;
 									a{
 										i{
-											width: 30px;
-											height: 30px;
-											border: 1px solid black;
-											padding: 7px;
+											width: 40px;
+											height: 40px;
+											padding: 11px;
 											font-size: 16px;
-											border-radius: 15px;
+											border-radius: 20px;
 
 										}
 										i.facebook{
-											padding: 8px;
+											padding: 12px;
+											color: white;
+											background-color: #3a5b93;
 											&:hover {
-												color: white;
-												background-color: #3a5b93;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.twitter{
+											color: white;
+											background-color: #00a3ec;
 											&:hover {
-												color: white;
-												background-color: #00a3ec;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.google{
+											color: #f99;
+											background-color: #00a3ec;
 											&:hover {
-												color: #f99;
-												background-color: #00a3ec;
-												border: none;
+												cursor: pointer;
 											}
 										}
 										i.pinterest{
+											color: white;
+											background-color: #f97;
 											&:hover {
-												color: white;
-												background-color: #f97;
-												border: none;
+												cursor: pointer;
 											}
 										}
 									}

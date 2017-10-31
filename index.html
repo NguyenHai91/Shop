@@ -12,23 +12,22 @@
 </head>
 
 <body>
-
     <div class="wrapper">
         <header id="header">
             <nav class="container" id="navbar">
                 <div class="navbar-full hidden-mobile hidden-tablet row">
-                    <div class=" col-md-2 col-lg-3">
+                    <div class=" col-md-3 col-lg-4">
                         <div class="logo-shop cover">
                             <a href="index.html"><p>Fashion & <span>Style</span></p></a>
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-lg-4">
+                    <div class="col-md-4 col-lg-4">
                         <div class="cover menu">
                             <ul>
-                                <li><a class="active" href="index.html">HOME</a></li>
+                                <li><a class="active" href="index.html">Home</a></li>
                                 <li>
-                                    <a href="men.html">MEN</a>
+                                    <a href="men.html">Men</a>
                                     <div class="menu-child">
                                         <ul>
                                             <li>
@@ -58,7 +57,7 @@
 
                                 </li>
                                 <li>
-                                    <a href="women.html">WOMEN</a>
+                                    <a href="women.html">Women</a>
                                     <div class="menu-child">
                                         <ul>
                                             <li>
@@ -90,7 +89,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-3 ">
+                    <div class="col-md-3 col-lg-2 ">
                         <div class="cover search-box">
                             <i class="fa fa-search" aria-hidden="true"></i>
                             <input class="search" type="search" placeholder="search">
@@ -165,7 +164,7 @@
             </nav>
         </header>
 
-        <div class="content" id="content">
+        <main class="content" id="content">
             <section id="head-slide">
                 <div class="container-full">
                     <div class="row">
@@ -267,25 +266,30 @@
                     </div>
                 </div>
             </section>
-            <section id="best-sellers">
+            <section id="search">
                 <div class="container-full">
                     <div class="row">
-                        <div class="col-lg-2 col-md-2 hidden-mobile hidden-tablet">
+                        <div class="col-lg-12 col-md-12 hidden-mobile hidden-tablet">
                             <div class="menu-vertical">
                                 <div class="box-title">Search</div>
                                 <div class="content-box">
-                                    <label for="gender">Men or Women</label>
-                                    <select class="select" name="gender">
-                                      <option value="men">Men</option>
-                                      <option value="women">Women</option>
-                                  </select>
-                                  <label for="gender">Kinds</label>
-                                  <select class="select" name="style">
+                                    <div class="cover-box">
+                                        <label for="gender">Men or Women</label>
+                                        <select class="select" name="gender">
+                                          <option value="men">Men</option>
+                                          <option value="women">Women</option>
+                                      </select>
+                                  </div>
+                                  <div class="cover-box">
+                                    <label for="gender">Kinds</label>
+                                    <select class="select" name="style">
                                       <option value="t-shirt">T-shirt</option>
                                       <option value="shirt">Shirt</option>
                                       <option value="pants">Pants</option>
                                       <option value="jacket">Jacket</option>
                                   </select>
+                              </div>
+                              <div class="cover-box">
                                   <label for="size">Size: </label>
                                   <select class="select" name="size">
                                       <option value="size-s">S</option>
@@ -293,252 +297,75 @@
                                       <option value="size-l">L</option>
                                       <option value="size-xl">XL</option>
                                   </select>
-                                  <label>Price from: </label><input class="input-price price-from" type="text" name="">
-                                  <label>Price to: </label><input class="input-price price-to" type="text" name="">
-                                  <a href="product.html"><button class="btn-search">Search</button></a>
                               </div>
-                          </div>
-                      </div>
-                      <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
-                        <div class="features">
-
-                            <div class="row">
-                                <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-                                    <div class="products">
-                                        <div class="box-title">Featutes</div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-1.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add to Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-2.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-3.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-4.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-5.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add to Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/men-6.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add to Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/women-1.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/women-2.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add to Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/women-3.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/women-4.jpg" alt="">
-                                                </a>
-                                                <div class="cover-btns">
-                                                    <a href="cart.html" title="">
-                                                        <button class="btn-add-cart">Add to Cart</button>
-                                                    </a>
-                                                    <a href="checkout.html" title="">
-                                                        <button class="btn-buy-now">Buy Now</button>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-
-                                            <span class="name">adidas Performance</span>
-                                            <span class="price">$200</span>
-                                        </div>
-                                        <div class="product">
-                                            <div class="cover-img">
-                                                <a href="detail.html">
-                                                    <img src="img/women-5.jpg" alt=""></a>
-                                                    <div class="cover-btns">
-                                                        <a href="cart.html" title="">
-                                                            <button class="btn-add-cart">Add Cart</button>
-                                                        </a>
-                                                        <a href="checkout.html" title="">
-                                                            <button class="btn-buy-now">Buy Now</button>
-                                                        </a>
-                                                    </div>
-                                                </div>
-
-                                                <span class="name">adidas Performance</span>
-                                                <span class="price">$200</span>
-                                            </div>
-                                            <div class="product">
-                                                <div class="cover-img">
-                                                    <a href="detail.html"><img src="img/women-6.jpg" alt=""></a>
-                                                    <div class="cover-btns">
-                                                        <a href="cart.html" title="">
-                                                            <button class="btn-add-cart">Add Cart</button>
-                                                        </a>
-                                                        <a href="checkout.html" title="">
-                                                            <button class="btn-buy-now">Buy Now</button>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <span class="name">adidas Performance</span>
-                                                <span class="price">$200</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                              <div class="cover-box">
+                                  <label for="price">Price: </label>
+                                  <select class="select" name="price">
+                                    <option value="">< $200</option>
+                                    <option value="">$200 - $500</option>
+                                    <option value="">$500 - $700</option>
+                                    <option value="">>$700</option>
+                                </select>
                             </div>
+                            <div class="cover-box">
+                                <a href="product.html"><button class="btn-search">Search</button></a>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="best-sellers">
+                <div class="container-full">
+                    <div class="features">
+
+                        <div class="row">
+                            <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                                <div class="products">
+                                    <div class="box-title">Featutes</div>
+                                    <div class="product">
+
+                                        <div class="cover-img">
+                                            <a href="detail.html">
+                                                <img src="img/skirt-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <span class="name">adidas Performance</span>
+                                        <span class="price">$200</span>
+                                    </div>
+                                    <div class="product">
+
+                                        <div class="cover-img">
+                                            <a href="detail.html">
+                                                <img src="img/skirt-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <span class="name">adidas Performance</span>
+                                        <span class="price">$200</span>
+                                    </div>
+                                    <div class="product">
+
+                                        <div class="cover-img">
+                                            <a href="detail.html">
+                                                <img src="img/skirt-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <span class="name">adidas Performance</span>
+                                        <span class="price">$200</span>
+                                    </div>
+                                    <div class="product">
+
+                                        <div class="cover-img">
+                                            <a href="detail.html">
+                                                <img src="img/skirt-4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <span class="name">adidas Performance</span>
+                                        <span class="price">$200</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -549,7 +376,6 @@
                         <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
                             <div class="cover-box">
                                 <button class="btn-left size-btn" id="btn-prev">
-
                                     <i class=" fa fa-angle-left " aria-hidden="true"></i>
                                 </button>
                                 <button class="btn-right size-btn" id="btn-next">
@@ -561,133 +387,135 @@
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/men-1.jpg" alt="">
+                                                <img src="img/coat-1.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product">
-                                        <a href="detail.html">
-                                            <div class="cover-img">
-                                                <img src="img/men-2.jpg" alt="">
-                                            </div>
-                                        </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product">
-                                        <a href="detail.html">
-                                            <div class="cover-img">
-                                                <img src="img/men-3.jpg" alt="">
-                                            </div>
-                                        </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
-                                    </div>
-                                </li>
-                                <li>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
 
-                                    <div class="product">
-                                        <a href="detail.html">
-                                            <div class="cover-img">
-                                                <img src="img/men-4.jpg" alt="">
-                                            </div>
-                                        </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-1.jpg" alt="">
+                                                <img src="img/coat-women-1.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-2.jpg" alt="">
+                                                <img src="img/coat-2.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
+
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-3.jpg" alt="">
+                                                <img src="img/coat-women-2.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-4.jpg" alt="">
+                                                <img src="img/coat-3.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
+
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-5.jpg" alt="">
+                                                <img src="img/coat-women-3.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-6.jpg" alt="">
+                                                <img src="img/coat-4.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
+
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-7.jpg" alt="">
+                                                <img src="img/coat-women-4.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product">
                                         <a href="detail.html">
                                             <div class="cover-img">
-                                                <img src="img/women-8.jpg" alt="">
+                                                <img src="img/coat-5.jpg" alt="">
                                             </div>
                                         </a>
-                                        <span class="name">Adidas</span>
-                                        <span class="price">$200</span>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="product">
+                                        <a href="detail.html">
+                                            <div class="cover-img">
+                                                <img src="img/coat-women-5.jpg" alt="">
+                                            </div>
+                                        </a>
+                                        <div class="cover-details">
+                                            <span class="name">Adidas</span>
+                                            <span class="price">$200</span>
+                                        </div>
                                     </div>
                                 </li>
                             </ul>
@@ -731,10 +559,9 @@
                             <button class="btn-register">Register</button>
                         </div>
                     </div>
-
                 </div>
             </section>
-        </div>
+        </main>
         <footer id="footer">
             <div class="menu-box container-full row">
                 <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -808,8 +635,7 @@
                 </div>
             </div>
         </footer>
-    </div>
-</body>
-<script type="text/javascript" src="js/app.js"></script>
+    </body>
+    <script type="text/javascript" src="js/app.js"></script>
 
-</html>
+    </html>
