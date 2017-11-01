@@ -1,16 +1,16 @@
 window.addEventListener('DOMContentLoaded', function(events)
 {
 	let body = document.getElementsByTagName("body")[0];
-
+	// show and hidelogin and register box
 	let loginBox = document.getElementById("login-register");
-	// show login and register box
+	
 	let account = document.getElementById("account");
 	account.addEventListener("click", function(event)
 	{
 		var display = loginBox.style.display;
 		loginBox.style.display = 'block';
 	});
-	// close login and register box
+
 	let closeLogin = document.getElementById('close-login-box');
 	closeLogin.addEventListener("click", function(event)
 	{

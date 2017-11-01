@@ -36,6 +36,10 @@ a {
   font-size: 20px;
   color: #000000; }
 
+button, select {
+  border-radius: 0;
+  -webkit-appearance: none; }
+
 .row {
   width: 100%; }
 
@@ -113,6 +117,7 @@ a {
 
   .wrapper #navbar {
     position: relative;
+    height: 50px;
     padding: 0 10px;
     border-bottom: 1px solid black; }
     .wrapper #navbar .btn-bag {
@@ -131,7 +136,7 @@ a {
         background-color: #F50014;
         color: #fff;
         border-radius: 15px;
-        top: 0px;
+        top: -4px;
         right: -12px;
         font-size: 14px;
         padding: 8px;
@@ -458,14 +463,15 @@ a {
       height: 60px;
       font-size: 30px;
       padding: 10px 0;
-      border-bottom: 2px solid black; }
-    .wrapper #content #cart .box-content .details-product,
+      border-bottom: 1px solid black; }
+    .wrapper #content #cart .box-content .details-product {
+      height: 70px; }
     .wrapper #content #cart .box-content .quantity,
     .wrapper #content #cart .box-content .price,
     .wrapper #content #cart .box-content .total,
     .wrapper #content #cart .box-content .delete,
     .wrapper #content #cart .box-content .quantity {
-      height: 100%; }
+      height: 50px; }
     .wrapper #content #cart .box-content .title-table {
       height: 50px;
       border-bottom: 1px solid black; }
@@ -489,9 +495,11 @@ a {
           .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail img {
             height: 100%;
             width: 100%; }
-        .wrapper #content #cart .box-content ul.list-products li .product-order .details-product a {
-          font-size: 14px;
-          text-decoration: none; }
+        .wrapper #content #cart .box-content ul.list-products li .product-order .details-product {
+          height: 70px; }
+          .wrapper #content #cart .box-content ul.list-products li .product-order .details-product a {
+            font-size: 14px;
+            text-decoration: none; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .btn-sub {
           width: 30px;
           height: 30px;
@@ -532,7 +540,7 @@ a {
     .wrapper #content #cart .box-content .box-checkout .btn-continues {
       height: 40px;
       padding: 0 20px;
-      margin-top: 0px;
+      margin-top: 10px;
       font-size: 18px;
       background-color: #0bf;
       border: none;
@@ -564,7 +572,9 @@ a {
         width: 100%;
         height: 30px;
         border: 1px solid black;
-        margin: 10px 0; }
+        margin: 10px 0;
+        padding-left: 2px;
+        font-size: 13px; }
       .wrapper #content #checkout .box-content #form-info-client textarea[name="address"] {
         height: 80px; }
       .wrapper #content #checkout .box-content .payments .visa,
@@ -579,6 +589,8 @@ a {
           .wrapper #content #checkout .box-content .summary-order ul li {
             margin: 10px;
             border-bottom: 1px dotted black; }
+            .wrapper #content #checkout .box-content .summary-order ul li .quantity {
+              text-align: center; }
             .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
               font-size: 20px; }
             .wrapper #content #checkout .box-content .summary-order ul li .submit {
@@ -586,7 +598,8 @@ a {
               width: 100%;
               color: #fff;
               border: none;
-              background-color: #f70; }
+              background-color: #f70;
+              font-size: 20px; }
             .wrapper #content #checkout .box-content .summary-order ul li:last-child {
               border: none; }
   .wrapper #content #success {
@@ -758,7 +771,7 @@ a {
         .wrapper #footer .menu-box .box-right .contact .title {
           padding-top: 10px; }
         .wrapper #footer .menu-box .box-right .contact .status {
-          margin: 5px 0;
+          margin: 5px 10px;
           font-size: 13px; }
         .wrapper #footer .menu-box .box-right .contact .send-mail input {
           height: 30px;
@@ -766,7 +779,8 @@ a {
           border: 1px solid black;
           padding-left: 5px;
           font-size: 14px;
-          float: left; }
+          float: left;
+          margin-left: 10px; }
         .wrapper #footer .menu-box .box-right .contact .send-mail .send {
           width: 70px;
           height: 30px;
@@ -781,7 +795,7 @@ a {
         .wrapper #footer .menu-box .box-right .contact .social-link {
           margin-top: 20px; }
           .wrapper #footer .menu-box .box-right .contact .social-link ul {
-            margin-left: 0;
+            margin-left: 10px;
             list-style: none; }
             .wrapper #footer .menu-box .box-right .contact .social-link ul li {
               float: left;
@@ -933,7 +947,7 @@ a {
         background-color: #F50014;
         color: #fff;
         border-radius: 15px;
-        top: -8px;
+        top: -12px;
         right: -12px;
         font-size: 14px;
         padding: 8px;
@@ -1271,15 +1285,19 @@ a {
       padding: 20px 0;
       border-bottom: 2px solid black; }
     .wrapper #content #cart .box-content .row {
-      height: 80px; }
-    .wrapper #content #cart .box-content .details-product,
+      height: 100px; }
+    .wrapper #content #cart .box-content .details-product {
+      padding-top: 5px; }
+      .wrapper #content #cart .box-content .details-product a {
+        font-size: 18px; }
     .wrapper #content #cart .box-content .quantity,
     .wrapper #content #cart .box-content .price,
     .wrapper #content #cart .box-content .total,
     .wrapper #content #cart .box-content .delete {
       height: 100%;
       padding-top: 30px;
-      text-align: center; }
+      text-align: center;
+      font-size: 13px; }
     .wrapper #content #cart .box-content .quantity {
       height: 100%;
       padding-top: 20px;
@@ -1300,8 +1318,8 @@ a {
       .wrapper #content #cart .box-content ul.list-products li .product-order {
         border-bottom: 1px dotted black; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail {
-          width: 70px;
-          height: 80px;
+          width: 80px;
+          height: 100px;
           padding: 5px; }
           .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail img {
             height: 100%;
@@ -1356,12 +1374,12 @@ a {
       color: #fff;
       cursor: pointer; }
   .wrapper #content #checkout {
-    padding: 0 30px; }
+    padding: 0 20px; }
     .wrapper #content #checkout .title-checkout {
       height: 70px;
       font-size: 30px;
       padding: 20px 0;
-      border-bottom: 2px solid black; }
+      border-bottom: 1px solid black; }
     .wrapper #content #checkout .box-content {
       min-height: 300px; }
       .wrapper #content #checkout .box-content .title-box-info,
@@ -1380,31 +1398,39 @@ a {
         width: 90%;
         height: 30px;
         border: 1px solid black;
-        margin: 10px; }
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 13px; }
       .wrapper #content #checkout .box-content #form-info-client textarea[name="address"] {
         height: 80px; }
       .wrapper #content #checkout .box-content .payments .visa,
       .wrapper #content #checkout .box-content .payments .atm,
       .wrapper #content #checkout .box-content .payments .received {
-        margin: 10px; }
-      .wrapper #content #checkout .box-content .summary-order {
+        margin-top: 10px; }
+      .wrapper #content #checkout .box-content .summary-order ul {
+        list-style: none;
+        padding: 20px;
         background-color: #DBDBDB; }
-        .wrapper #content #checkout .box-content .summary-order ul {
-          list-style: none;
-          padding: 20px; }
-          .wrapper #content #checkout .box-content .summary-order ul li {
-            margin: 10px;
-            border-bottom: 1px dotted black; }
-            .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
-              font-size: 20px; }
-            .wrapper #content #checkout .box-content .summary-order ul li .submit {
-              height: 40px;
-              width: 100%;
-              color: #fff;
-              border: none;
-              background-color: #f70; }
-            .wrapper #content #checkout .box-content .summary-order ul li:last-child {
-              border: none; }
+        .wrapper #content #checkout .box-content .summary-order ul li {
+          margin: 10px;
+          border-bottom: 1px dotted black; }
+          .wrapper #content #checkout .box-content .summary-order ul li .quantity {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .price {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
+            font-size: 20px; }
+          .wrapper #content #checkout .box-content .summary-order ul li .submit {
+            height: 40px;
+            width: 100%;
+            color: #fff;
+            border: none;
+            background-color: #f70;
+            font-size: 20px; }
+            .wrapper #content #checkout .box-content .summary-order ul li .submit:hover {
+              cursor: pointer; }
+          .wrapper #content #checkout .box-content .summary-order ul li:last-child {
+            border: none; }
   .wrapper #content #success {
     width: 80%;
     height: 500px;
@@ -2236,7 +2262,7 @@ a {
             color: white;
             background-color: #000; }
   .wrapper #content #cart {
-    padding: 0 30px; }
+    padding: 0 100px; }
     .wrapper #content #cart .title-cart {
       height: 70px;
       font-size: 30px;
@@ -2244,7 +2270,6 @@ a {
       border-bottom: 2px solid black; }
     .wrapper #content #cart .box-content .row {
       height: 80px; }
-    .wrapper #content #cart .box-content .details-product,
     .wrapper #content #cart .box-content .quantity,
     .wrapper #content #cart .box-content .price,
     .wrapper #content #cart .box-content .total,
@@ -2252,14 +2277,15 @@ a {
       height: 100%;
       padding-top: 30px;
       text-align: center; }
+    .wrapper #content #cart .box-content .details-product {
+      padding: 7px; }
     .wrapper #content #cart .box-content .quantity {
       height: 100%;
       padding-top: 20px;
       text-align: center; }
     .wrapper #content #cart .box-content .title-table {
-      height: 50px;
-      border-bottom: 1px solid black;
-      text-align: center; }
+      height: 40px;
+      border-bottom: 1px solid black; }
       .wrapper #content #cart .box-content .title-table .details-product,
       .wrapper #content #cart .box-content .title-table .quantity,
       .wrapper #content #cart .box-content .title-table .price,
@@ -2271,15 +2297,19 @@ a {
       .wrapper #content #cart .box-content ul.list-products li .product-order {
         border-bottom: 1px dotted black; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail {
-          width: 80px;
+          width: 100px;
           height: 80px;
           padding: 5px; }
           .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail img {
             height: 100%;
             width: 100%; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .details-product a {
-          font-size: 14px;
+          font-size: 16px;
           text-decoration: none; }
+          .wrapper #content #cart .box-content ul.list-products li .product-order .details-product a:hover {
+            text-decoration: underline; }
+        .wrapper #content #cart .box-content ul.list-products li .product-order .details-product p {
+          font-size: 13px; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .btn-sub {
           width: 30px;
           height: 30px;
@@ -2328,7 +2358,7 @@ a {
       height: 70px;
       font-size: 30px;
       padding: 20px 0;
-      border-bottom: 2px solid black; }
+      border-bottom: 1px solid black; }
     .wrapper #content #checkout .box-content {
       min-height: 300px; }
       .wrapper #content #checkout .box-content .title-box-info,
@@ -2347,31 +2377,39 @@ a {
         width: 90%;
         height: 30px;
         border: 1px solid black;
-        margin: 10px; }
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 13px; }
       .wrapper #content #checkout .box-content #form-info-client textarea[name="address"] {
         height: 80px; }
       .wrapper #content #checkout .box-content .payments .visa,
       .wrapper #content #checkout .box-content .payments .atm,
       .wrapper #content #checkout .box-content .payments .received {
-        margin: 10px; }
-      .wrapper #content #checkout .box-content .summary-order {
+        margin-top: 10px; }
+      .wrapper #content #checkout .box-content .summary-order ul {
+        list-style: none;
+        padding: 20px;
         background-color: #DBDBDB; }
-        .wrapper #content #checkout .box-content .summary-order ul {
-          list-style: none;
-          padding: 20px; }
-          .wrapper #content #checkout .box-content .summary-order ul li {
-            margin: 10px;
-            border-bottom: 1px dotted black; }
-            .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
-              font-size: 20px; }
-            .wrapper #content #checkout .box-content .summary-order ul li .submit {
-              height: 40px;
-              width: 100%;
-              color: #fff;
-              border: none;
-              background-color: #f70; }
-            .wrapper #content #checkout .box-content .summary-order ul li:last-child {
-              border: none; }
+        .wrapper #content #checkout .box-content .summary-order ul li {
+          margin: 10px;
+          border-bottom: 1px dotted black; }
+          .wrapper #content #checkout .box-content .summary-order ul li .quantity {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .price {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
+            font-size: 20px; }
+          .wrapper #content #checkout .box-content .summary-order ul li .submit {
+            height: 40px;
+            width: 100%;
+            color: #fff;
+            border: none;
+            background-color: #f70;
+            font-size: 20px; }
+            .wrapper #content #checkout .box-content .summary-order ul li .submit:hover {
+              cursor: pointer; }
+          .wrapper #content #checkout .box-content .summary-order ul li:last-child {
+            border: none; }
   .wrapper #content #success {
     width: 80%;
     height: 500px;
@@ -2692,7 +2730,6 @@ a {
         width: 50000px;
         white-space: nowrap; }
         .wrapper #content #head-slide .slide-box ul li {
-          width: 1280px;
           max-height: 600px;
           overflow: hidden;
           float: left; }
@@ -2712,7 +2749,7 @@ a {
       float: left;
       padding: 0px 50px;
       margin: 5px;
-      border: 1px solid #9F9F9F; }
+      border: 1px solid #E3E3E3; }
       .wrapper #content #brands .cover-brands .brand-box .cover-img img {
         width: 100%; }
       .wrapper #content #brands .cover-brands .brand-box:hover {
@@ -2736,7 +2773,8 @@ a {
       height: 35px;
       border: 1px solid black;
       font-size: 14px;
-      border-radius: none; }
+      border-radius: none;
+      background-color: #fff; }
     .wrapper #content #search .menu-vertical .btn-search {
       width: 100%;
       height: 35px;
@@ -3160,7 +3198,7 @@ a {
       height: 70px;
       font-size: 30px;
       padding: 20px 0;
-      border-bottom: 2px solid black; }
+      border-bottom: 1px solid black; }
     .wrapper #content #checkout .box-content {
       min-height: 300px; }
       .wrapper #content #checkout .box-content .title-box-info,
@@ -3179,31 +3217,39 @@ a {
         width: 90%;
         height: 30px;
         border: 1px solid black;
-        margin: 10px; }
+        margin-top: 10px;
+        padding-left: 5px;
+        font-size: 13px; }
       .wrapper #content #checkout .box-content #form-info-client textarea[name="address"] {
         height: 80px; }
       .wrapper #content #checkout .box-content .payments .visa,
       .wrapper #content #checkout .box-content .payments .atm,
       .wrapper #content #checkout .box-content .payments .received {
-        margin: 10px; }
-      .wrapper #content #checkout .box-content .summary-order {
+        margin-top: 10px; }
+      .wrapper #content #checkout .box-content .summary-order ul {
+        list-style: none;
+        padding: 20px;
         background-color: #DBDBDB; }
-        .wrapper #content #checkout .box-content .summary-order ul {
-          list-style: none;
-          padding: 20px; }
-          .wrapper #content #checkout .box-content .summary-order ul li {
-            margin: 10px;
-            border-bottom: 1px dotted black; }
-            .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
-              font-size: 20px; }
-            .wrapper #content #checkout .box-content .summary-order ul li .submit {
-              height: 40px;
-              width: 100%;
-              color: #fff;
-              border: none;
-              background-color: #f70; }
-            .wrapper #content #checkout .box-content .summary-order ul li:last-child {
-              border: none; }
+        .wrapper #content #checkout .box-content .summary-order ul li {
+          margin: 10px;
+          border-bottom: 1px dotted black; }
+          .wrapper #content #checkout .box-content .summary-order ul li .quantity {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .price {
+            text-align: center; }
+          .wrapper #content #checkout .box-content .summary-order ul li .total-cost {
+            font-size: 20px; }
+          .wrapper #content #checkout .box-content .summary-order ul li .submit {
+            height: 40px;
+            width: 100%;
+            color: #fff;
+            border: none;
+            background-color: #f70;
+            font-size: 20px; }
+            .wrapper #content #checkout .box-content .summary-order ul li .submit:hover {
+              cursor: pointer; }
+          .wrapper #content #checkout .box-content .summary-order ul li:last-child {
+            border: none; }
   .wrapper #content #success {
     width: 80%;
     height: 500px;

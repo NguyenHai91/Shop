@@ -3,6 +3,23 @@ window.addEventListener("DOMContentLoaded", function (event)
 {
 	let body = document.getElementsByTagName("body")[0];
 
+	let slideBoxHead = document.getElementById("slide-box-head");
+	let liTags = slideBoxHead.querySelectorAll("li");
+	let widthWindow = window.innerWidth;
+	for (var i = 0; i < liTags.length; i++) {
+		
+		liTags[i].style.width = widthWindow + "px";
+		console.log(liTags[i].style.width);
+	}
+	window.addEventListener("resize", function(){
+		for (var i = 0; i < liTags.length; i++) {
+			let widthWindow = window.innerWidth;
+			liTags[i].style.width = widthWindow + "px";
+			console.log(liTags[i].style.width);
+		}
+		
+	});
+	
 	let loginBox = document.getElementById("login-register");
 	// show login and register box
 	let account = document.getElementById("account");
@@ -51,7 +68,7 @@ window.addEventListener("DOMContentLoaded", function (event)
 	{
 		handleIndexHot(n);
 		listImagesHot.style.transition = 'transform 0.1s ease';
-		listImagesHot.style.transform = 'translateX(' + indImageHot * -270 + 'px)';
+		listImagesHot.style.transform = 'translateX(' + indImageHot * -220 + 'px)';
 		
 
 	}
@@ -61,7 +78,7 @@ window.addEventListener("DOMContentLoaded", function (event)
 		handleIndexHot(n);
 
 		listImagesHot.style.transition = 'transform 1s ease';
-		listImagesHot.style.transform = 'translateX(' + indImageHot * -270 + 'px)';
+		listImagesHot.style.transform = 'translateX(' + indImageHot * -220 + 'px)';
 	}
 	
 	function controlSlideHot()
@@ -87,9 +104,9 @@ window.addEventListener("DOMContentLoaded", function (event)
 	{
 		indImageHead = indImageHead + n;
 		if (indImageHead < 0) {
-			indImageHead = 1;
+			indImageHead = 7;
 		} else{
-			if (indImageHead > 1){
+			if (indImageHead > 7){
 				indImageHead = 0;
 			}
 		};
@@ -99,7 +116,7 @@ window.addEventListener("DOMContentLoaded", function (event)
 		handleIndexHead(n);
 
 		listImagesHead.style.transition = 'transform 1s ease';
-		listImagesHead.style.transform = 'translateX(' + indImageHead * (-body.clientWidth) + 'px)';
+		listImagesHead.style.transform = 'translateX(' + indImageHead * (-window.innerWidth) + 'px)';
 	}
 	function controlSlideHead()
 	{
