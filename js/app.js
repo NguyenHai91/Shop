@@ -7,17 +7,18 @@ window.addEventListener("DOMContentLoaded", function (event)
 	let liTags = slideBoxHead.querySelectorAll("li");
 	let widthWindow = window.innerWidth;
 	for (var i = 0; i < liTags.length; i++) {
-		
 		liTags[i].style.width = widthWindow + "px";
+		
 		console.log(liTags[i].style.width);
 	}
 	window.addEventListener("resize", function(){
 		for (var i = 0; i < liTags.length; i++) {
 			let widthWindow = window.innerWidth;
 			liTags[i].style.width = widthWindow + "px";
+			
 			console.log(liTags[i].style.width);
 		}
-		
+
 	});
 	
 	let loginBox = document.getElementById("login-register");
@@ -96,6 +97,7 @@ window.addEventListener("DOMContentLoaded", function (event)
 	{
 		plusImageHot(1);
 	});
+	
 	// slide images head
 	
 	let listImagesHead = document.getElementById("list-images-head");

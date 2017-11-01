@@ -50,6 +50,7 @@ button, select {
 	border-radius: 0;
 	-webkit-appearance: none;
 }
+
 .row{
 	width: 100%;
 }
@@ -66,11 +67,21 @@ button, select {
 	.hidden-mobile{
 		display: none;
 	}
-	[class*="col-"] {
-
-		float: left;
-		//border: 1px solid violet;
-	}
+	// @for $i from 1 through 12 {
+	// 	.col-sm-#{$i} {
+	// 		@if $i == 6 {
+	// 			width: 50%;
+	// 		} @else {
+	// 			@if $i == 12 {
+	// 				width: 100%;
+	// 			} @else {
+	// 				width: (8.33% * $i);
+	// 			}
+	// 		}
+	// 	}
+	// }
+	
+	
 	.col-sm-1 {width: 8.33%;}
 	.col-sm-2 {width: 16.66%;}
 	.col-sm-3 {width: 25%;}
@@ -83,6 +94,11 @@ button, select {
 	.col-sm-10 {width: 83.33%;}
 	.col-sm-11 {width: 91.66%;}
 	.col-sm-12 {width: 100%;}
+	[class*="col-"] {
+
+		float: left;
+		//border: 1px solid violet;
+	}
 
 	.container {
 		width: 100%;
@@ -92,19 +108,7 @@ button, select {
 	.container-full {
 		width: 100%;
 	}
-	.box-title {
-		min-width: 120px;
-		height: 40px;
-		position: absolute;
-		left: 50%;
-		margin-left: -80px;
-		font-size: 25px;
-		text-align: center;
-		top: 0;
-		margin-top: -20px;
-		padding: 0 10px;
-		background-color: white;
-	}
+	
 
 	.wrapper {
 		#navbar{
@@ -214,17 +218,36 @@ button, select {
 			}
 		}
 		#content {
+			.box-title {
+				min-width: 120px;
+				height: 40px;
+				position: absolute;
+				left: 50%;
+				margin-left: -80px;
+				font-size: 25px;
+				text-align: center;
+				top: 0;
+				margin-top: -20px;
+				padding: 0 10px;
+				background-color: white;
+			}
+
 			#head-slide {
 				position: relative;
+				
 				.slide-box {
 					ul{
 						list-style: none;
-						width: 2000px;
+						width: 20000px;
+						
 						li{
 							width: 479px;
+							height: 500px;
 							float: left;
 							img{
 								width: 100%;
+								height: 100%;
+								object-fit: cover;
 								z-index: 100;
 							}
 						}
@@ -1136,11 +1159,7 @@ button, select {
 		display: none;
 	}
 
-	[class*="col-"] {
-
-		float: left;
-		//border: 1px solid blue;
-	}
+	
 	.col-xs-1 {width: 8.33%;}
 	.col-xs-2 {width: 16.66%;}
 	.col-xs-3 {width: 25%;}
@@ -1153,6 +1172,10 @@ button, select {
 	.col-xs-10 {width: 83.33%;}
 	.col-xs-11 {width: 91.66%;}
 	.col-xs-12 {width: 100%;}
+	[class*="col-"] {
+		float: left;
+		//border: 1px solid blue;
+	}
 
 	.container {
 		width: 100%;
@@ -1162,19 +1185,7 @@ button, select {
 	.container-full {
 		width: 100%;
 	}
-	.box-title {
-		min-width: 120px;
-		height: 40px;
-		position: absolute;
-		left: 50%;
-		margin-left: -80px;
-		font-size: 25px;
-		text-align: center;
-		top: 0;
-		margin-top: -20px;
-		padding: 0 10px;
-		background-color: white;
-	}
+	
 
 	.wrapper {
 		#navbar{
@@ -1283,21 +1294,37 @@ button, select {
 			}
 		}
 		#content {
+
+			.box-title {
+				min-width: 120px;
+				height: 40px;
+				position: absolute;
+				left: 50%;
+				margin-left: -80px;
+				font-size: 25px;
+				text-align: center;
+				top: 0;
+				margin-top: -20px;
+				padding: 0 10px;
+				background-color: white;
+			}
 			#head-slide {
 				position: relative;
 				.slide-box {
 					overflow-x: hidden; 
 					ul{
-						width: 5000px;
+						width: 50000px;
 						white-space: nowrap;
 						list-style: none;
 						li{
 							width: 960px;
-							max-height: 500px;
+							height: 500px;
 							overflow: hidden;
 							float: left;
 							img{
 								width: 100%;
+								height: 100%;
+								object-fit: fill;
 								z-index: 100;
 							}
 						}
@@ -2254,19 +2281,6 @@ button, select {
 	.container-full {
 		width: 100%;
 	}
-	.box-title {
-		min-width: 120px;
-		height: 40px;
-		position: absolute;
-		left: 50%;
-		margin-left: -60px;
-		font-size: 25px;
-		text-align: center;
-		top: 0;
-		margin-top: -20px;
-		background-color: white;
-		padding: 0 10px;
-	}
 	.wrapper{
 		#header{
 			#navbar {
@@ -2410,6 +2424,20 @@ button, select {
 			}
 		}
 		#content {
+			.box-title {
+				min-width: 120px;
+				height: 40px;
+				position: absolute;
+				left: 50%;
+				margin-left: -60px;
+				font-size: 25px;
+				text-align: center;
+				top: 0;
+				margin-top: -20px;
+				background-color: white;
+				padding: 0 10px;
+			}
+
 			#head-slide {
 				position: relative;
 				//overflow: hidden;
@@ -2447,11 +2475,13 @@ button, select {
 						white-space: nowrap;
 						li{
 							width: 980px;
-							max-height: 600px;
+							height: 600px;
 							overflow: hidden;
 							float: left;
 							img{
 								width: 100%;
+								height: 100%;
+								object-fit: fill;
 								z-index: 100;
 							}
 						}
@@ -3220,7 +3250,6 @@ button, select {
 					color: #FF0000;
 				}
 			}
-
 		}
 		#footer {
 			border-top: 2px solid black;
@@ -3355,11 +3384,7 @@ button, select {
 	.hidden-lage-screen{
 		display: none;
 	}
-	[class*="col-"] {
-
-		float: left;
-		//border: 1px solid red;
-	}
+	
 	.col-lg-1 {width: 8.33%;}
 	.col-lg-2 {width: 16.66%;}
 	.col-lg-3 {width: 25%;}
@@ -3372,6 +3397,10 @@ button, select {
 	.col-lg-10 {width: 83.33%;}
 	.col-lg-11 {width: 91.66%;}
 	.col-lg-12 {width: 100%;}
+	[class*="col-"] {
+		float: left;
+		//border: 1px solid red;
+	}
 
 	.container {
 		width: 100%;
@@ -3381,20 +3410,7 @@ button, select {
 	.container-full {
 		width: 100%;
 	}
-	.box-title {
-		min-width: 120px;
-		height: 40px;
-		position: absolute;
-		left: 50%;
-		margin-left: -60px;
-		font-size: 25px;
-		text-align: center;
-		top: 0;
-		margin-top: -20px;
-		background-color: white;
-		padding: 0 10px;
-		z-index: 105;
-	}
+	
 	.wrapper{
 		#header{
 			#navbar {
@@ -3538,12 +3554,26 @@ button, select {
 			}
 		}
 		#content {
+			.box-title {
+				min-width: 120px;
+				height: 40px;
+				position: absolute;
+				left: 50%;
+				margin-left: -60px;
+				font-size: 25px;
+				text-align: center;
+				top: 0;
+				margin-top: -20px;
+				background-color: white;
+				padding: 0 10px;
+				z-index: 105;
+			}
 			#head-slide {
 				position: relative;
-				height: 600px;
+				
 				.slide-box {
 					overflow: hidden;
-					margin-top: -2px;
+					margin-top: -1px;
 					width: 100%;
 					.btn-shop{
 						position: absolute;
@@ -3576,11 +3606,13 @@ button, select {
 						white-space: nowrap;
 						li{
 							//width: 1280px;
-							max-height: 600px;
+							height: 600px;
 							overflow: hidden;
 							float: left;
 							img{
 								width: 100%;
+								height: 100%;
+								object-fit: fill;
 								z-index: 100;
 							}
 						}
