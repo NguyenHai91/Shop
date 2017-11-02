@@ -37,8 +37,8 @@ window.addEventListener("DOMContentLoaded", function (events)
 	btnSub.addEventListener('click', function(events){
 		let valueNum = parseInt(intNum.value);
 		valueNum = valueNum - 1;
-		if(valueNum < 0){
-			valueNum =0;
+		if(valueNum <= 0){
+			valueNum = 1;
 		}
 		intNum.value = valueNum;
 		

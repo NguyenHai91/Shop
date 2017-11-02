@@ -1,19 +1,20 @@
 
 window.addEventListener("DOMContentLoaded", function (event) 
 {
-	let body = document.getElementsByTagName("body")[0];
+	var body = document.getElementsByTagName("body")[0];
 
-	let slideBoxHead = document.getElementById("slide-box-head");
-	let liTags = slideBoxHead.querySelectorAll("li");
-	let widthWindow = window.innerWidth;
-	for (var i = 0; i < liTags.length; i++) {
+	var slideBoxHead = document.getElementById("slide-box-head");
+	var liTags = slideBoxHead.querySelectorAll("li");
+	var widthWindow;
+	for (let i = 0; i < liTags.length; i++) {
+		widthWindow = window.innerWidth;
 		liTags[i].style.width = widthWindow + "px";
 		
 		console.log(liTags[i].style.width);
 	}
 	window.addEventListener("resize", function(){
-		for (var i = 0; i < liTags.length; i++) {
-			let widthWindow = window.innerWidth;
+		for (let i = 0; i < liTags.length; i++) {
+			widthWindow = window.innerWidth;
 			liTags[i].style.width = widthWindow + "px";
 			
 			console.log(liTags[i].style.width);
@@ -21,23 +22,23 @@ window.addEventListener("DOMContentLoaded", function (event)
 
 	});
 	
-	let loginBox = document.getElementById("login-register");
+	var loginBox = document.getElementById("login-register");
 	// show login and register box
-	let account = document.getElementById("account");
+	var account = document.getElementById("account");
 	account.addEventListener("click", function(event)
 	{
-		var display = loginBox.style.display;
+		let display = loginBox.style.display;
 		loginBox.style.display = 'block';
 	});
 	// close login and register box
-	let closeLogin = document.getElementById('close-login-box');
+	var closeLogin = document.getElementById('close-login-box');
 	closeLogin.addEventListener("click", function(event)
 	{
 		loginBox.style.display = 'none';
 	});
 	// toggle mobile menu
-	let btnMenu = document.getElementById("btn-menu");
-	let mobileMenu = document.getElementById("mobile-menu");
+	var btnMenu = document.getElementById("btn-menu");
+	var mobileMenu = document.getElementById("mobile-menu");
 	btnMenu.addEventListener("click", function(event)
 	{
 		let isShow = mobileMenu.style.display;
@@ -49,10 +50,10 @@ window.addEventListener("DOMContentLoaded", function (event)
 		
 	});
 	// slide hot products
-	let listImagesHot = document.getElementById("list-hot-products");
-	let prev = document.getElementById("btn-prev");
-	let next = document.getElementById("btn-next");
-	let indImageHot = -1;
+	var listImagesHot = document.getElementById("list-hot-products");
+	var prev = document.getElementById("btn-prev");
+	var next = document.getElementById("btn-next");
+	var indImageHot = -1;
 
 	function handleIndexHot (n)
 	{
@@ -67,19 +68,23 @@ window.addEventListener("DOMContentLoaded", function (event)
 	}
 	function plusImageHot(n)
 	{
+
 		handleIndexHot(n);
+		let width = indImageHot * (-220);
+
 		listImagesHot.style.transition = 'transform 0.1s ease';
-		listImagesHot.style.transform = 'translateX(' + indImageHot * -220 + 'px)';
+		listImagesHot.style.transform = `translateX( ${width}px)`;
 		
 
 	}
 
 	function slideHotProducts(n)
 	{
+		
 		handleIndexHot(n);
-
+		let width = indImageHot * (-220);
 		listImagesHot.style.transition = 'transform 1s ease';
-		listImagesHot.style.transform = 'translateX(' + indImageHot * -220 + 'px)';
+		listImagesHot.style.transform = `translateX( ${width}px)`;
 	}
 	
 	function controlSlideHot()
@@ -100,8 +105,8 @@ window.addEventListener("DOMContentLoaded", function (event)
 	
 	// slide images head
 	
-	let listImagesHead = document.getElementById("list-images-head");
-	let indImageHead = -1;
+	var listImagesHead = document.getElementById("list-images-head");
+	var indImageHead = -1;
 	function handleIndexHead (n)
 	{
 		indImageHead = indImageHead + n;
@@ -116,9 +121,9 @@ window.addEventListener("DOMContentLoaded", function (event)
 	function slideHead(n)
 	{
 		handleIndexHead(n);
-
+		let widthSlide = indImageHead * (-widthWindow);
 		listImagesHead.style.transition = 'transform 1s ease';
-		listImagesHead.style.transform = 'translateX(' + indImageHead * (-window.innerWidth) + 'px)';
+		listImagesHead.style.transform = `translateX( ${widthSlide}px)`;
 	}
 	function controlSlideHead()
 	{
@@ -126,5 +131,6 @@ window.addEventListener("DOMContentLoaded", function (event)
 		setTimeout(controlSlideHead, 4000);
 	}
 	controlSlideHead();
+	
 	
 });
