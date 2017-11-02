@@ -3113,7 +3113,7 @@ button, select {
       padding: 20px 0;
       border-bottom: 2px solid black; }
     .wrapper #content #cart .box-content .row {
-      height: 80px; }
+      height: 100px; }
     .wrapper #content #cart .box-content .quantity,
     .wrapper #content #cart .box-content .price,
     .wrapper #content #cart .box-content .total,
@@ -3142,7 +3142,7 @@ button, select {
         border-bottom: 1px dotted black; }
         .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail {
           width: 100px;
-          height: 80px;
+          height: 100px;
           padding: 5px; }
           .wrapper #content #cart .box-content ul.list-products li .product-order .thumbnail img {
             height: 100%;
@@ -3187,6 +3187,8 @@ button, select {
       margin-left: 50px;
       color: #fff;
       cursor: pointer; }
+      .wrapper #content #cart .box-content .box-checkout .btn-checkout:hover {
+        opacity: 0.6; }
     .wrapper #content #cart .box-content .box-checkout .btn-continues {
       height: 40px;
       padding: 0 20px;
@@ -3196,6 +3198,8 @@ button, select {
       float: right;
       color: #fff;
       cursor: pointer; }
+      .wrapper #content #cart .box-content .box-checkout .btn-continues:hover {
+        opacity: 0.6; }
   .wrapper #content #checkout {
     padding: 0 30px; }
     .wrapper #content #checkout .title-checkout {

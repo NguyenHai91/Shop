@@ -4128,7 +4128,7 @@ button, select {
 				}
 				.box-content {
 					.row {
-						height: 80px;
+						height: 100px;
 					}
 					.quantity,
 					.price,
@@ -4164,7 +4164,7 @@ button, select {
 								border-bottom: 1px dotted black;
 								.thumbnail {
 									width: 100px;
-									height: 80px;
+									height: 100px;
 									padding: 5px;
 									img {
 										height: 100%;
@@ -4231,6 +4231,9 @@ button, select {
 							margin-left: 50px;
 							color: #fff;
 							cursor: pointer;
+							&:hover {
+								opacity: 0.6;
+							}
 						}
 						.btn-continues {
 							height: 40px;
@@ -4241,6 +4244,9 @@ button, select {
 							float: right;
 							color: #fff;
 							cursor: pointer;
+							&:hover {
+								opacity: 0.6;
+							}
 						}
 					}
 				}

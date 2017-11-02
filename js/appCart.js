@@ -42,8 +42,8 @@ window.addEventListener('DOMContentLoaded', function(events)
 			
 			let valueInput = parseInt(inputNum[i].value);
 			valueInput = valueInput - 1;
-			if(valueInput < 0){
-				valueInput = 0;
+			if(valueInput <= 0){
+				valueInput = 1;
 			}
 			inputNum[i].value = valueInput;
 		});
