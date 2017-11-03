@@ -71,17 +71,17 @@ button, select {
 		.col-sm-#{$i} {
 			@if $i == 6 {
 				width: ceil(8.33% * $i);
-			} @else {
-				@if $i == 12 {
-					width: ceil(8.33% * $i);
 				} @else {
-					width: (8.33% * $i);
+					@if $i == 12 {
+						width: ceil(8.33% * $i);
+						} @else {
+							width: (8.33% * $i);
+						}
+					}
 				}
 			}
-		}
-	}
-	
-	
+
+
 	// .col-sm-1 {width: 8.33%;}
 	// .col-sm-2 {width: 16.66%;}
 	// .col-sm-3 {width: 25%;}
@@ -3570,7 +3570,6 @@ button, select {
 			}
 			#head-slide {
 				position: relative;
-				
 				.slide-box {
 					overflow: hidden;
 					margin-top: -2px;
@@ -3897,6 +3896,7 @@ button, select {
 							width: 30px;
 							height: 30px;
 							font-size: 13px;
+							color: #000;
 						}
 						
 						.btn-sub {
@@ -3951,12 +3951,12 @@ button, select {
 						width: 150px;
 						height: 40px;
 						border: none;
+						font-size: 18px;
+						color: #fff;
 						cursor: pointer;
-						a{
-							font-size: 16px;
-							text-decoration: none;
-							color: #fff;
-
+						text-decoration: none;
+						&:hover {
+							opacity: 0.6;
 						}
 					}
 					.info-product {

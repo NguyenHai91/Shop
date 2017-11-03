@@ -2935,7 +2935,8 @@ button, select {
         .wrapper #content #details-product .right .quantity button {
           width: 30px;
           height: 30px;
-          font-size: 13px; }
+          font-size: 13px;
+          color: #000; }
         .wrapper #content #details-product .right .quantity .btn-sub {
           border: 1px solid black; }
         .wrapper #content #details-product .right .quantity .btn-plus {
@@ -2974,11 +2975,12 @@ button, select {
         width: 150px;
         height: 40px;
         border: none;
-        cursor: pointer; }
-        .wrapper #content #details-product .right button a {
-          font-size: 16px;
-          text-decoration: none;
-          color: #fff; }
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none; }
+        .wrapper #content #details-product .right button:hover {
+          opacity: 0.6; }
       .wrapper #content #details-product .right .info-product {
         margin: 20px 0; }
         .wrapper #content #details-product .right .info-product h4 {
